@@ -120,7 +120,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-692
+696
 Miami (OH),Indiana State
 (1) Southern California,Virginia Tech
 Arizona State,Texas-El Paso
@@ -813,3 +813,7 @@ Florida Atlantic,Florida International
 Hawaii,Michigan State
 (7) Louisville,Tulane
 Navy,Army
+Oklahoma,Colorado
+Pittsburgh,South Florida
+USC,UCLA
+Virginia Tech,Miami FL

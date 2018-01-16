@@ -112,7 +112,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-644
+646
 Northwestern,Oklahoma
 (17) Syracuse,(24) Wisconsin
 Central Michigan,Northern Illinois
@@ -757,3 +757,5 @@ Virginia,Virginia Tech
 Marshall,Toledo
 (20) Colorado State,New Mexico
 Navy,Army
+Nebraska,Texas A&M
+Tennessee,Auburn
