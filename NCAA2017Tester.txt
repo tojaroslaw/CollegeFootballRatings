@@ -1,0 +1,268 @@
+133
+Air Force
+Akron
+Alabama
+Appalachian State
+Arizona
+Arizona State
+Arkansas
+Arkansas State
+Army
+Auburn
+Ball State
+Baylor
+Boise State
+Boston College
+Bowling Green State
+Brigham Young
+Buffalo
+California
+Central Michigan
+Charlotte
+Cincinnati
+Clemson
+Coastal Carolina
+Colorado
+Colorado State
+Connecticut
+Duke
+East Carolina
+Eastern Michigan
+Florida
+Florida Atlantic
+Florida International
+Florida State
+Fresno State
+Georgia
+Georgia Southern
+Georgia State
+Georgia Tech
+Hawaii
+Houston
+Idaho
+Illinois
+Indiana
+Iowa
+Iowa State
+Kansas
+Kansas State
+Kent State
+Kentucky
+Louisiana Tech
+Louisiana-Lafayette
+Louisiana-Monroe
+Louisville
+LSU
+Marshall
+Maryland
+Massachusetts
+Memphis
+Miami FL
+Miami OH
+Michigan
+Michigan State
+Middle Tennessee State
+Minnesota
+Mississippi State
+Missouri
+Navy
+Nebraska
+Nevada
+Nevada-Las Vegas
+New Mexico
+New Mexico State
+North Carolina
+North Carolina State
+North Texas
+Northern Illinois
+Northwestern
+Notre Dame
+Ohio
+Ohio State
+Oklahoma
+Oklahoma State
+Old Dominion
+Ole Miss
+Oregon
+Oregon State
+Penn State
+Pitt
+Purdue
+Rice
+Rutgers
+San Diego State
+San Jose State
+SMU
+South Alabama
+South Carolina
+South Florida
+Southern Mississippi
+Stanford
+Syracuse
+Temple
+Tennessee
+Texas
+Texas A&M
+Texas Christian
+Texas State
+Texas Tech
+Toledo
+Troy
+Tulane
+Tulsa
+UAB
+UCF
+UCLA
+USC
+Utah
+Utah State
+UTEP
+UTSA
+Vanderbilt
+Virginia
+Virginia Tech
+Wake Forest
+Washington
+Washington State
+West Virginia
+Western Kentucky
+Western Michigan
+Wisconsin
+Wyoming
+El Crapo State
+Toby
+FCS
+
+Virginia Military Institute,Nevada-Las Vegas,Nevada,Colorado State,Utah State
+Arkansas-Pine Bluff,Bowling Green State,Ball State,Western Michigan,Buffalo,Ohio,Kent State
+Florida State,Fresno State,Colorado State,Vanderbilt,Ole Miss,Texas A&M,Arkansas,Tennessee,LSU,Mississippi State,Mercer,Clemson,Georgia
+Savannah State,Texas State,New Mexico State,Idaho,Coastal Carolina,Georgia Southern,Georgia State,Louisiana-Lafayette,Toledo
+Northern Arizona,UTEP,Colorado,UCLA,California,Washington State,Oregon State
+New Mexico State,Oregon,Washington,Utah,Colorado,Oregon State,Arizona
+Florida A&M,New Mexico State,Ole Miss,Coastal Carolina
+Arkansas-Pine Bluff,Georgia Southern,Coastal Carolina,Louisiana-Lafayette,New Mexico State,Texas State,Louisiana-Monroe
+Fordham,Buffalo,UTEP,Rice,Eastern Michigan,Temple,Air Force,Duke,Navy,San Diego State
+Georgia Southern,Mercer,Missouri,Mississippi State,Ole Miss,Arkansas,Texas A&M,Georgia,Louisiana-Monroe,Alabama
+UAB,Tennessee Tech
+Kansas
+Troy,New Mexico,Brigham Young,San Diego State,Wyoming,Utah State,Nevada,Colorado State,Air Force,Fresno State,Oregon
+Northern Illinois,Central Michigan,Louisville,Virginia,Florida State,Connecticut,Syracuse
+Miami OH,Kent State
+Portland State,San Jose State,Nevada-Las Vegas,Hawaii
+Colgate,Florida Atlantic,Kent State,Bowling Green State,Ball State,Ohio
+North Carolina,Weber State,Ole Miss,Washington State,Oregon State
+Rhode Island,Kansas,Ohio,Ball State,Western Michigan,Eastern Michigan,Kent State,Northern Illinois
+UAB
+Austin Peay,Miami OH,Tulane,Connecticut
+Kent State,Auburn,Louisville,Boston College,Virginia Tech,Wake Forest,Georgia Tech,North Carolina State,Florida State,Citadel,South Carolina,Miami FL
+Massachusetts,Idaho,Georgia Southern
+Colorado State,Texas State,Northern Colorado,Oregon State,California
+Oregon State,Abilene Christian,Hawaii,Utah State,Nevada,New Mexico,San Jose State
+Holy Cross,Temple,Tulsa
+North Carolina Central,Northwestern,Baylor,North Carolina,Georgia Tech,Wake Forest,Northern Illinois
+Connecticut,Brigham Young,Cincinnati
+Charlotte,Rutgers,Ball State,Miami OH,Bowling Green State
+Tennessee,Kentucky,Vanderbilt,UAB
+Bethune-Cookman,Middle Tennessee State,Old Dominion,North Texas,Western Kentucky,Marshall,Louisiana Tech,Florida International,Charlotte,North Texas,Akron
+Alcorn State,Rice,Charlotte,Tulane,Marshall,UTSA,Western Kentucky,Massachusetts
+Wake Forest,Duke,Syracuse,Delaware State,Florida,Louisiana-Monroe,Southern Mississippi
+Incarnate Word,Nevada,San Jose State,New Mexico,San Diego State,Brigham Young,Hawaii,Wyoming,Boise State,Houston
+Appalachian State,Notre Dame,Samford,Mississippi State,Tennessee,Vanderbilt,Missouri,Florida,South Carolina,Kentucky,Georgia Tech,Auburn,Oklahoma
+South Alabama,Louisiana-Lafayette
+Charlotte,Coastal Carolina,Louisiana-Monroe,South Alabama,Georgia Southern,Texas State,Western Kentucky
+Jacksonville State,Pitt,North Carolina,Wake Forest,Virginia Tech
+Massachusetts,Western Carolina,San Jose State
+Arizona,Rice,Temple,SMU,South Florida,East Carolina,Navy
+Sacramento State,South Alabama,Louisiana-Monroe,Georgia State
+Ball State,Western Kentucky
+Virginia,Georgia Southern,Charleston Southern,Illinois,Rutgers
+Wyoming,Iowa State,North Texas,Illinois,Minnesota,Ohio State,Nebraska,Boston College
+Northern Iowa,Akron,Oklahoma,Kansas,Texas Tech,Texas Christian,Baylor,Memphis
+Southeast Missouri State
+Central Arkansas,Charlotte,Baylor,Kansas,Texas Tech,Oklahoma State,Iowa State,UCLA
+Howard,Miami OH
+Southern Mississippi,Eastern Kentucky,South Carolina,Eastern Michigan,Missouri,Tennessee,Vanderbilt
+Northwestern State,Western Kentucky,South Alabama,Rice,UTEP,UTSA,SMU
+Southeastern Louisiana,Idaho,Texas State,South Alabama,New Mexico State
+Louisiana-Lafayette,Coastal Carolina,Texas State,Appalachian State
+Purdue,North Carolina,Kent State,Murray State,Florida State,Virginia,Syracuse,Kentucky
+Brigham Young,Chattanooga,Syracuse,Florida,Auburn,Ole Miss,Arkansas,Tennessee,Texas A&M
+Miami OH,Kent State,Cincinnati,Charlotte,Old Dominion,Middle Tennessee State,Western Kentucky,Colorado State
+Texas,Towson,Minnesota,Indiana
+Georgia Southern,Appalachian State,Maine,Brigham Young
+Louisiana-Monroe,UCLA,Southern Illinois,Connecticut,Navy,Houston,Tulane,Tulsa,SMU,East Carolina
+Bethune-Cookman,Toledo,Duke,Florida State,Georgia Tech,Syracuse,North Carolina,Virginia Tech,Notre Dame,Virginia
+Austin Peay,Central Michigan,Buffalo,Akron,Ball State
+Florida,Cincinnati,Air Force,Purdue,Indiana,Rutgers,Minnesota,Maryland
+Bowling Green State,Western Michigan,Iowa,Michigan,Minnesota,Indiana,Penn State,Maryland,Rutgers,Washington State
+Syracuse,Bowling Green State,Florida International,UTEP,Charlotte,Old Dominion,Arkansas State
+Buffalo,Oregon State,Middle Tennessee State,Illinois,Nebraska
+Charleston Southern,Louisiana Tech,LSU,Brigham Young,Kentucky,Texas A&M,Massachusetts,Arkansas,Louisville
+Missouri State,Idaho,Connecticut,Florida,Tennessee,Vanderbilt,Arkansas
+Florida Atlantic,Tulane,Cincinnati,Tulsa,Air Force,SMU,Virginia
+Arkansas State,Rutgers,Illinois,Purdue
+Hawaii,San Jose State,Nevada-Las Vegas
+Idaho,San Jose State,Fresno State,Hawaii,New Mexico
+Abilene Christian,Tulsa,Air Force
+New Mexico,UTEP,Georgia Southern,Texas State,Idaho,South Alabama,Utah State
+Old Dominion,Pitt,Western Carolina
+Marshall,Furman,Florida State,Syracuse,Louisville,Pitt,Boston College,North Carolina,Arizona State
+Lamar,UAB,Southern Mississippi,UTSA,Old Dominion,Louisiana Tech,UTEP,Army,Rice
+Eastern Illinois,Nebraska,Kent State,Buffalo,Bowling Green State,Eastern Michigan,Ball State,Western Michigan
+Nevada,Bowling Green State,Maryland,Iowa,Michigan State,Nebraska,Purdue,Minnesota,Illinois,Kentucky
+Temple,Boston College,Michigan State,Miami OH,North Carolina,USC,North Carolina State,Wake Forest,Navy,LSU
+Hampton,Kansas,Eastern Michigan,Massachusetts,Bowling Green State,Kent State,Miami OH,Toledo,UAB
+Indiana,Army,Nevada-Las Vegas,Rutgers,Maryland,Nebraska,Penn State,Michigan State,Illinois,Michigan,Wisconsin,USC
+UTEP,Ohio State,Tulane,Baylor,Texas,Kansas State,Texas Tech,Oklahoma State,Texas Christian,Kansas,West Virginia,Texas Christian
+Tulsa,South Alabama,Pitt,Texas Tech,Baylor,Texas,West Virginia,Iowa State,Kansas,Virginia Tech
+Albany,Massachusetts,Charlotte,Florida International,Rice
+South Alabama,Tennessee-Martin,Vanderbilt,Kentucky,Louisiana-Lafayette,Mississippi State
+Southern Utah,Nebraska,Wyoming,California,Utah,Arizona,Oregon State
+Portland State
+Akron,Pitt,Georgia State,Iowa,Indiana,Northwestern,Michigan,Rutgers,Nebraska,Maryland,Washington
+Youngstown State,Rice,Duke,Virginia,Miami FL
+Ohio,Missouri,Minnesota,Illinois,Iowa,Indiana,Arizona
+UTEP
+Morgan State,Illinois,Purdue,Maryland
+California-Davis,Arizona State,Stanford,Air Force,Northern Illinois,Nevada-Las Vegas,Hawaii,San Jose State,Nevada,New Mexico
+Cal Poly,Wyoming
+Stephen F. Austin,North Texas,Arkansas State,Connecticut,Cincinnati,Tulsa,Tulane
+Alabama A&M,Troy,Louisiana-Monroe,Arkansas State
+North Carolina State,Missouri,Louisiana Tech,Arkansas,Tennessee,Vanderbilt,Florida,Wofford,Michigan
+San Jose State,Stony Brook,Illinois,Temple,East Carolina,Cincinnati,Tulane,Connecticut,Tulsa,Texas Tech
+Southern,Louisiana-Monroe,UTSA,UTEP,Louisiana Tech,Rice,Charlotte,Marshall
+Rice,UCLA,Arizona State,Utah,Oregon,Oregon State,Washington,California,Notre Dame
+Central Connecticut State,Central Michigan,Pitt,Clemson
+Villanova,Massachusetts,East Carolina,Navy,Cincinnati,Tulsa,Florida International
+Georgia Tech,Indiana State,Massachusetts,Southern Mississippi
+San Jose State,Iowa State,Kansas State,Baylor,Kansas,West Virginia,Missouri
+Nicholls State,Louisiana-Lafayette,Arkansas,South Carolina,Florida,New Mexico,Ole Miss
+Jackson State,Arkansas,SMU,Oklahoma State,West Virginia,Kansas State,Kansas,Texas,Texas Tech,Baylor,Stanford
+Houston Baptist,Coastal Carolina
+Eastern Washington,Arizona State,Houston,Kansas,Baylor,Texas
+Elon,Nevada,Tulsa,Eastern Michigan,Central Michigan,Akron,Ball State,Northern Illinois,Bowling Green State,Western Michigan,Akron
+Alabama State,New Mexico State,Akron,LSU,Georgia State,Georgia Southern,Idaho,Coastal Carolina,Texas State,Arkansas State,North Texas
+Grambling State,Army,Tulsa,East Carolina,Houston
+Louisiana-Lafayette,Houston
+Alabama A&M,Coastal Carolina,Louisiana Tech,Middle Tennessee State,Southern Mississippi,Rice,UTSA,UTEP
+Florida International,Maryland,Memphis,Cincinnati,East Carolina,Navy,Austin Peay,SMU,Connecticut,Temple,South Florida,Memphis,Auburn
+Texas A&M,Hawaii,Colorado,Oregon,Arizona State,California
+Western Michigan,Stanford,Texas,California,Oregon State,Utah,Arizona State,Arizona,Colorado,UCLA,Stanford
+North Dakota,Brigham Young,San Jose State,Arizona,UCLA,Colorado,West Virginia
+Idaho State,San Jose State,Brigham Young,Nevada-Las Vegas,New Mexico,Hawaii
+
+Baylor,Southern,Texas State,Rice,UTEP,Marshall
+Middle Tennessee State,Alabama A&M,Kansas State,Western Kentucky,Tennessee
+William & Mary,Connecticut,Boise State,Duke,North Carolina,Georgia Tech
+West Virginia,Delaware,East Carolina,Old Dominion,Boston College,North Carolina,Duke,Pitt,Virginia
+Presbyterian,Boston College,Utah State,Appalachian State,Louisville,Syracuse,North Carolina State,Texas A&M
+Rutgers,Montana,Fresno State,Colorado,Oregon State,California,UCLA,Oregon,Utah,Washington State
+Montana State,Boise State,Oregon State,Nevada,USC,Oregon,Colorado,Stanford,Utah
+East Carolina,Delaware State,Kansas,Texas Tech,Baylor,Iowa State,Kansas State
+Eastern Kentucky,Ball State,UTEP,Charlotte,Old Dominion,Middle Tennessee State
+Idaho,Wagner,Ball State,Buffalo,Eastern Michigan,Kent State
+Utah State,Florida Atlantic,Brigham Young,Northwestern,Nebraska,Purdue,Maryland,Illinois,Indiana,Iowa,Michigan,Minnesota,Miami FL
+Gardner-Webb,Hawaii,Texas State,Utah State,New Mexico,Colorado State,Air Force,Central Michigan
+Harvard,UTEP,Charlotte,Oregon State,Baylor,Rice,Kansas,San Jose State,Georgia Southern,Texas State,Ball State,Bowling Green State,Kent State,Illinois,Hawaii
+Alabama,Georgia,Wisconsin,Clemson,Oklahoma
+Nevada-Las Vegas,Nevada,East Carolina,Baylor,Georgia Southern,Charlotte,Bowling Green State,Georgia State,Coastal Carolina
