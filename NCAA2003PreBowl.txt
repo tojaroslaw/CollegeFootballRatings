@@ -1,4 +1,3 @@
-118
 Air Force
 Akron
 Alabama
@@ -117,7 +116,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-743
+_
 (7) Kansas State,California
 San Jose State,Grambling State
 Ball State,Indiana State
@@ -861,3 +860,4 @@ Virginia,(21) Virginia Tech
 Navy,Army
 (2) Southern California,Oregon State
 Syracuse,Notre Dame
+=

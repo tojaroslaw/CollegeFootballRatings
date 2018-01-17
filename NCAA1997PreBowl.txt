@@ -1,4 +1,3 @@
-113
 Air Force
 Akron
 Alabama
@@ -112,7 +111,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-646
+_
 Northwestern,Oklahoma
 (17) Syracuse,(24) Wisconsin
 Central Michigan,Northern Illinois
@@ -759,3 +758,4 @@ Marshall,Toledo
 Navy,Army
 Nebraska,Texas A&M
 Tennessee,Auburn
+=

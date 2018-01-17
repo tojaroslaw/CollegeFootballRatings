@@ -1,4 +1,3 @@
-121
 Air Force
 Akron
 Alabama
@@ -120,7 +119,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-724
+_
 Miami (OH),Indiana State
 (1) Southern California,Virginia Tech
 Arizona State,Texas-El Paso
@@ -845,3 +844,4 @@ Minnesota,Alabama
 (5) Utah,(19) Pittsburgh
 (3) Auburn,(9) Virginia Tech
 (1) Southern California,(2) Oklahoma
+=

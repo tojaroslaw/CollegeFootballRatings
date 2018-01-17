@@ -1,4 +1,3 @@
-131
 Air Force
 Akron
 Alabama
@@ -130,7 +129,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-874
+_
 Air Force,Virginia Military Institute
 Air Force,Nevada-Las Vegas
 Air Force,Nevada
@@ -1005,3 +1004,4 @@ Wyoming,New Mexico
 Wyoming,Colorado State
 Wyoming,Air Force
 Wyoming,Central Michigan
+=

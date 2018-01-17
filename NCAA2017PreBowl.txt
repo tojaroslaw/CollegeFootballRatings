@@ -1,4 +1,3 @@
-131
 Air Force
 Akron
 Alabama
@@ -130,7 +129,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-833
+_
 Brigham Young,Portland State
 Colorado State,Oregon State
 Hawaii,Massachusetts
@@ -965,3 +964,4 @@ New Mexico State,South Alabama
 Toledo,Akron
 Troy,Arkansas State
 Army,Navy
+=

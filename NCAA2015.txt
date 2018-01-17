@@ -1,4 +1,3 @@
-129
 Air Force
 Akron
 Alabama
@@ -128,7 +127,7 @@ Western Michigan
 Wisconsin
 Wyoming
 FCS
-870
+_
 (22) Arizona,Texas-San Antonio
 Ball State,Virginia Military Institute
 Connecticut,Villanova
@@ -999,3 +998,4 @@ Georgia,Penn State
 (11) Texas Christian,(15) Oregon
 West Virginia,Arizona State
 (2) Alabama,(1) Clemson
+=
