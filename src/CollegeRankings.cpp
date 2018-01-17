@@ -81,6 +81,7 @@ struct comp {
 } comp;
 
 int main() {
+	ios_base::sync_with_stdio(false);
 	string temp;
 	cout << setprecision(4) << fixed;
 
@@ -324,6 +325,9 @@ void getInput2(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vec
 		getline(matchstream, loser, '\n');
 		w = findTeam(teams, winner);
 		l = findTeam(teams, loser);
+		if (w == l) {
+			continue;
+		}
 		if (abs(games[w][l]) <= 0.0001) {
 			teamsPlayed[w] += 1;
 			teamsPlayed[l] += 1;
@@ -376,6 +380,8 @@ string>& teams, int& numTeams) {
 
 
 	for (int i = 0; i < 1000000; ++i) {
+		bool tie = false;
+
 		getline(cin, match, '\n');
 		if (match.size() == 0) {
 			continue;
@@ -386,6 +392,9 @@ string>& teams, int& numTeams) {
 		}
 		else if (match.size() >= 2 && match[0] == '/' && match[1] == '/') {
 			continue;
+		}
+		else if (match[0] == '%') {
+			tie = true;
 		}
 		match = toUpper(match);
 		matchstream = stringstream(match);
@@ -398,10 +407,13 @@ string>& teams, int& numTeams) {
 			teamsPlayed[w] += 1;
 			teamsPlayed[l] += 1;
 		}
-		if (winner[0] != '%') {
+		if (tie) {
+			ties[w][l] += 1;
+			ties[l][w] += 1;
+		}
+		else {
 			h2hPM[w][l] += 1;
 			h2hPM[l][w] -= 1;
-			ties[w][l] += 1;
 		}
 		games[w][l] += 1;
 		games[l][w] += 1;
@@ -571,8 +583,8 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 			tieGames = 0;
 			for (int j = 0; j < (int) games[i].size(); ++j) {
 				if (games[i][j] != 0) {
-					wins += (int) (((h2hPM[i][j] + 1.0) / 2.0) * (games[i][j] - ties[i][j]) + 0.0000001);
-					losses += (int) (games[i][j] - ((h2hPM[i][j] + 1.0) / 2.0) * (games[i][j] - ties[i][j]) + 0.0000001);
+					wins += (int) (((h2hPM[i][j] + 1.0) / 2.0) * (games[i][j]) + 0.0000001);
+					losses += (int) (games[i][j] - ((h2hPM[i][j] + 1.0) / 2.0) * (games[i][j]) + 0.0000001);
 					tieGames += ties[i][j];
 				}
 			}
