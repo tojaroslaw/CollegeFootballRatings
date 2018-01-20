@@ -1,3 +1,114 @@
+Nebraska
+Vanderbilt
+Cornell
+Centre
+Michigan
+California
+Iowa
+Princeton
+Yale
+Notre Dame
+Virginia Tech
+Army
+Harvard
+Georgia Tech
+North Carolina
+West Virginia
+Auburn
+Virginia Military Institute
+Syracuse
+Chicago
+Navy
+Texas
+Pitt
+Colgate
+Tennessee
+Drake
+Pennsylvania
+USC
+Wisconsin
+Florida
+Virginia
+Penn State
+Lafayette
+Georgia
+Alabama
+Kentucky
+Furman
+Minnesota
+Kansas
+Colorado State
+Brown
+Richmond
+Carnegie Mellon
+Washington
+William & Mary
+Kansas State
+Washington & Lee
+Dartmouth
+Baylor
+Northwestern
+Tulane
+Duke
+Ohio State
+South Carolina
+Sewanee
+Missouri
+Washington & Jefferson
+Clemson
+Presbyterian
+North Carolina State
+Oregon
+Texas A&M
+Illinois
+Utah
+SMU
+Gonzaga
+Colorado Mines
+Idaho
+Denver
+Oklahoma State
+Maryland
+Davidson
+Chattanooga
+Colorado College
+Oklahoma
+Colorado
+Columbia
+Rutgers
+Stanford
+Oregon State
+Lehigh
+Mississippi College
+Mercer
+Rice
+Washington State
+Arkansas
+Spring Hill
+Utah State
+Purdue
+Fort Benning
+Citadel
+Iowa State
+Wake Forest
+Grinnell
+Ole Miss
+Indiana
+Birmingham-Southern
+Oglethorpe
+Mississippi State
+LSU
+Texas Christian
+Washington (MO)
+Newberry
+Samford
+Hampden-Sydney
+Wofford
+Wyoming
+Erskine
+Brigham Young
+FCS
+_
 Auburn,Marion
 Centre,Carson-Newman
 Davidson,Elon
@@ -611,6 +722,4 @@ Wake Forest,Hampden-Sydney
 Haskell,Baylor
 Arizona,Utah State
 Phillips,Baylor
-West Virginia,Gonzaga
-Pittsburgh,Stanford
-Southern California,Penn State
+=

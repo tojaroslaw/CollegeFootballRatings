@@ -122,7 +122,7 @@ int main() {
 
 
 	h2hPredict = calcNewRatingGrid4(games, h2h, h2hPM, teamsPlayed);
-	for (int i = 0; i < (int) sqrt(numTeams) + 1000; ++i) {
+	for (int i = 0; i < (int) sqrt(numTeams) * numTeams + 10; ++i) {
 		h2hPredict = calcNewRatingGrid4(games, h2hPredict, h2hPM, teamsPlayed);
 	}
 
@@ -520,7 +520,6 @@ vector<vector<double> > calcNewRatingGrid4(vector<vector<double>>& games, vector
 		for (uint64_t j = 0; j < newGrid.size(); ++j) {
 			prediction = predictH2Hsquare4(games, h2h, h2hPM, tempRatings, tempAbsRatings, ntr, teamsPlayed, i, j);
 			newGrid[i][j] = prediction;
-			//newGrid[j][i] = -prediction;
 		}
 	}
 	return newGrid;
@@ -686,17 +685,22 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 		return 0;
 	}
 	double gameFactor = sqrt((((double) numTeams - (double) teamsPlayed[a] + 1) / ((double) numTeams + 1)));
-	double importance = ((ntr[a] * ntr[b] + 1.0) / 2.0);
+	double importance = powX(((ntr[a] * ntr[b] * ntr[b] + 1.0) / 2.0), 2);
+	double teamPower = rt2((1) / (ntr[a] + 1));
+	//double importance = 1;
+	//double importance = powX(((ntr[a] * ntr[b] + games[a][b]) / (games[a][b] + 2)), 2);
+	//double importance = powX(((ntr[a] * ntr[b] + (games[a][b] + 1)) / (games[a][b] + 4)), 2);
 	if (games[a][b] != 0) {
+		double gameScore = (teamPower * importance * (h2hPM[a][b] * games[a][b] * games[a][b]) / (games[a][b] + 1));
 		if (games[a][b] > 1.5) {
-			return rtX((importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)), (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
+			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
 		}
 		else {
-			return rt2((importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)));
+			return rt2(gameScore);
 		}
-		return prevH2H[a][b];
+		//return prevH2H[a][b];
 	}
-	double sqPrediction = gameFactor * importance * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
+	double sqPrediction = 1.0 / teamPower * gameFactor * (0.25 + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
 	double prediction = rtX(sqPrediction, 2);
 	return prediction;
 }
