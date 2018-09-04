@@ -20,6 +20,7 @@ void getInput2(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vec
 void getInput3(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
 string>& teams, int& numTeams);
 int findTeam(vector<string>& teams, string& team);
+bool teamExists(vector<string>& teams, string& team);
 string toUpper(string& x);
 void calcFinalRatings(vector<vector<double> >& h2hPredict, vector<double>& ratings);
 void printRatings(vector<string>& teams, vector<double>& ratings);
@@ -33,9 +34,7 @@ double predictH2Hsquare2(vector<vector<double>>& originalH2HGames, vector<vector
 double predictH2Hsquare3(vector<vector<double>>& games, vector<vector<double>>& rawH2HPM, vector<vector<double>>& prevH2H, vector<double>& tempRatings, vector<
 double>& tempAbsRatings, vector<double>& ntr, vector<int>& gamesPlayed, int a, int b);
 double predictH2Hsquare4(vector<vector<double>>& games, vector<vector<double>>& prevH2H, vector<vector<double>>& h2hPM, vector<double>& tempRatings, vector<
-double>& tempAbsRatings, vector<
-double>& ntr, vector<
-int>& teamsPlayed, int a, int b);
+double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, int b);
 void printGrid(vector<vector<double>>& grid);
 void printGrid2(vector<vector<double>>& grid, vector<string>& teams);
 double rt2(double x);
@@ -52,6 +51,7 @@ vector<double> normalizePow(vector<double>& x, double exponent);
 struct Team {
 		string name;
 		double rating;
+		double rawScore = 0;
 		int wins;
 		int losses;
 		int ties;
@@ -71,6 +71,24 @@ struct Team {
 			this->wins = wins;
 			this->losses = losses;
 			this->ties = ties;
+		}
+
+		Team(string& name, double rating, double rawScore, int wins, int losses) {
+			this->name = name;
+			this->rating = rating;
+			this->wins = wins;
+			this->losses = losses;
+			this->ties = 0;
+			this->rawScore = rawScore;
+		}
+
+		Team(string& name, double rating, double rawScore, int wins, int losses, int ties) {
+			this->name = name;
+			this->rating = rating;
+			this->wins = wins;
+			this->losses = losses;
+			this->ties = ties;
+			this->rawScore = rawScore;
 		}
 };
 
@@ -122,7 +140,7 @@ int main() {
 
 
 	h2hPredict = calcNewRatingGrid4(games, h2h, h2hPM, teamsPlayed);
-	for (int i = 0; i < (int) sqrt(numTeams) * numTeams + 10; ++i) {
+	for (int i = 0; i < (int) sqrt(numTeams) + numTeams + 100; ++i) {
 		h2hPredict = calcNewRatingGrid4(games, h2hPredict, h2hPM, teamsPlayed);
 	}
 
@@ -141,6 +159,17 @@ int findTeam(vector<string>& teams, string& team) {
 		}
 	}
 	return teams.size() - 1;
+}
+
+bool teamExists(vector<string>& teams, string& team) {
+	team = toUpper(team);
+	for (uint64_t i = 0; i < teams.size(); ++i) {
+		//cout << teams[i] << endl;
+		if (team == teams[i]) {
+			return true;
+		}
+	}
+	return false;
 }
 
 string toUpper(string& x) {
@@ -210,7 +239,7 @@ string toUpper(string& x) {
 	if (x == "NIU") {
 		return "NORTHERN ILLINOIS";
 	}
-	if (x == "PENNSYLVANIA STATE") {
+	if (x == "PENNSYLVANIA STATE" || x == "PENN ST") {
 		return "PENN STATE";
 	}
 	if (x == "PITTSBURGH") {
@@ -232,7 +261,7 @@ string toUpper(string& x) {
 		return "SOUTHERN MISS";
 	}
 	if (x == "TX A&M" || x == "A&M" || x == "TAMU" || x == "TEXAS AGRICULTURAL AND MECHANICAL") {
-		return "PENN STATE";
+		return "TEXAS A&M";
 	}
 	if (x == "TEXAS CHRISTIAN") {
 		return "TCU";
@@ -249,11 +278,11 @@ string toUpper(string& x) {
 	if (x == "ALBANY (NY)" || x == "ALBANY") {
 		return "ALBANY NY";
 	}
-	if (x == "LOYOLA (IL)" || x == "LOYOLA IL") {
-		return "PENN";
+	if (x == "LOYOLA (IL)" || x == "LOYOLA IL" || x == "LOYOLA CHICAGO" || x == "LOYOLA-CHICAGO" || x == "LOY CHICAGO" || x == "LOY-CHICAGO") {
+		return "LOYOLA-IL";
 	}
 	if (x == "LOYOLA (MD)" || x == "LOYOLA MD") {
-		return "PENN";
+		return "LOYOLA-MD";
 	}
 	if (x == "ST. FRANCIS (NY)" || x == "ST. FRANCIS") {
 		return "ST. FRANCIS NY";
@@ -350,10 +379,20 @@ string>& teams, int& numTeams) {
 	int w;
 	int l;
 	stringstream matchstream;
+	stringstream input;
+	stringstream inputcopy;
+
+	x = "$";
+	do {
+		getline(cin, x, '\n');
+		input << x << "\n";
+		inputcopy << x << "\n";
+	} while (x != "=");
+
 
 	numTeams = 0;
 	for (int i = 0; i < 1000; ++i) {
-		getline(cin, x, '\n');
+		getline(input, x, '\n');
 		if ((x.size() >= 2 && x[0] == '/' && x[1] == '/') || x.size() == 0) {
 			continue;
 		}
@@ -364,6 +403,44 @@ string>& teams, int& numTeams) {
 		++numTeams;
 		x = toUpper(x);
 		teams.push_back(x);
+	}
+
+	if (numTeams == 0) {
+		x = "$";
+		do {
+			getline(inputcopy, x, '\n');
+		} while (x != "_");
+
+		bool wX;
+		bool lX;
+		for (int i = 0; i < 1000000; ++i) {
+			getline(inputcopy, match, '\n');
+			if (match.size() == 0) {
+				continue;
+			}
+			else if (match.size() >= 1 && match[0] == '=') {
+				i = 999999999;
+				continue;
+			}
+			else if (match.size() >= 2 && match[0] == '/' && match[1] == '/') {
+				continue;
+			}
+			match = toUpper(match);
+			matchstream = stringstream(match);
+
+			getline(matchstream, winner, ',');
+			getline(matchstream, loser, '\n');
+			wX = teamExists(teams, winner);
+			lX = teamExists(teams, loser);
+			if (wX == false) {
+				teams.push_back(winner);
+				++numTeams;
+			}
+			if (lX == false) {
+				teams.push_back(loser);
+				++numTeams;
+			}
+		}
 	}
 
 	h2hPM.resize(numTeams);
@@ -382,7 +459,7 @@ string>& teams, int& numTeams) {
 	for (int i = 0; i < 1000000; ++i) {
 		bool tie = false;
 
-		getline(cin, match, '\n');
+		getline(input, match, '\n');
 		if (match.size() == 0) {
 			continue;
 		}
@@ -533,10 +610,12 @@ void printRatings(vector<string>& teams, vector<double>& ratings) {
 
 void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vector<double>>& games, vector<vector<double>>& h2hPM, vector<vector<int>>& ties) {
 	vector<Team> teamRatings;
+	vector<double> normRatings;
 	bool hasTies = false;
 
 	teamRatings.reserve(ratings.size());
-	ratings = normalize(ratings);
+	normRatings.reserve(ratings.size());
+	normRatings = normalize(ratings);
 
 	for (int i = 0; i < (int) ties.size(); ++i) {
 		for (int j = 0; j < (int) ties[i].size(); ++j) {
@@ -551,7 +630,7 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 	}
 
 	if (!hasTies) {
-		cout << "RANK,TEAM,RATING,WINS,LOSSES" << endl;
+		cout << "RANK,TEAM,RATING,RAW_SCORE,RAW_SCORE_PER_TEAM,WINS,LOSSES" << endl;
 		int wins = 0;
 		int losses = 0;
 		for (uint64_t i = 0; i < teams.size(); ++i) {
@@ -563,16 +642,16 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 					losses += (int) (games[i][j] - ((h2hPM[i][j] + 1.0) / 2.0) * games[i][j] + 0.0000001);
 				}
 			}
-			teamRatings.push_back(Team(teams[i], ratings[i], wins, losses));
+			teamRatings.push_back(Team(teams[i], normRatings[i], ratings[i], wins, losses));
 		}
 		sort(teamRatings.begin(), teamRatings.end(), comp);
 		for (uint64_t i = 0; i < teamRatings.size(); ++i) {
 			teamRatings[i].rank = i + 1;
-			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].wins << "," << teamRatings[i].losses << endl;
+			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeams - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << endl;
 		}
 	}
 	else {
-		cout << "RANK,TEAM,RATING,WINS,LOSSES,TIES" << endl;
+		cout << "RANK,TEAM,RATING,RAW_SCORE,RAW_SCORE_PER_TEAM,WINS,LOSSES,TIES" << endl;
 		int wins = 0;
 		int losses = 0;
 		int tieGames = 0;
@@ -587,12 +666,12 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 					tieGames += ties[i][j];
 				}
 			}
-			teamRatings.push_back(Team(teams[i], ratings[i], wins, losses, tieGames));
+			teamRatings.push_back(Team(teams[i], normRatings[i], ratings[i], wins, losses, tieGames));
 		}
 		sort(teamRatings.begin(), teamRatings.end(), comp);
 		for (uint64_t i = 0; i < teamRatings.size(); ++i) {
 			teamRatings[i].rank = i + 1;
-			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].wins << "," << teamRatings[i].losses << "," << teamRatings[i].ties << endl;
+			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeams - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << "," << teamRatings[i].ties << endl;
 		}
 	}
 }
@@ -700,7 +779,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 		}
 		//return prevH2H[a][b];
 	}
-	double sqPrediction = 1.0 / teamPower * gameFactor * (0.25 + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
+	double sqPrediction = 1.0 / teamPower * gameFactor * (pow2(0.5) + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
 	double prediction = rtX(sqPrediction, 2);
 	return prediction;
 }

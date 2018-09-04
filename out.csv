@@ -1,616 +1,674 @@
-Auburn,Marion
-Centre,Carson-Newman
-Davidson,Elon
-Georgia,Newberry
-Mercer,Piedmont
-Penn State,St. Bonaventure
-Samford,Jacksonville State
-Syracuse,Hobart
-Tennessee,Emory & Henry
-Texas Christian,Dallas
-Virginia Tech,Hampden-Sydney
-Wake Forest,Atlantic Christian
-Yale,Bates
-Army,Springfield
-Chattanooga,Bryson
-Furman,Newberry
-South Carolina,Erskine
-Southern California,USS Mississippi
-Texas,Austin
-Alabama,Marion
-Arkansas,Hendrix
-Army,Lebanon Valley
-Auburn,Samford
-Baylor,North Texas
-Birmingham-Southern,Jacksonville State
-Brown,Rhode Island
-California,Santa Clara
-Centre,Clemson
-Colgate,Clarkson
-Colorado College,Wyoming
-Columbia,Ursinus
-Cornell,St. Bonaventure
-Dartmouth,Norwich
-Duke,Guilford
-Georgia,Mercer
-Georgia Tech,Oglethorpe
-Grinnell,Parsons (Iowa)
-Harvard,Middlebury
-Howard Payne,Texas A&M
-Kentucky,Marshall
-Lafayette,Richmond
-%Lehigh,Gettysburg
-Louisiana State,Northwestern State
-Maryland,3rd Army Corps
-Mississippi College,Louisiana College
-North Carolina,Wake Forest
-North Carolina State,Randolph-Macon
-Notre Dame,Kalamazoo
-Oklahoma State,Northwestern Oklahoma State
-Penn State,William & Mary
-Pennsylvania,Franklin & Marshall
-Pittsburgh,Cincinnati
-Presbyterian,Davidson
-Princeton,Johns Hopkins
-Rutgers,Pennsylvania Military
-Southern California,Southern California Alumni
-Southern Methodist,Southern Methodist Freshmen
-Syracuse,Muhlenberg
-Talladega,Fort Benning
-Tennessee,Carson-Newman
-%Union (Tennessee),Mississippi
-Utah State,Montana Wesleyan
-Vanderbilt,Middle Tennessee State
-Virginia,George Washington
-Virginia Military Institute,Lynchburg
-Virginia Tech,King
-Washington,USS Idaho
-Washington & Jefferson,Geneva
-Washington & Lee,Emory & Henry
-West Virginia,West Virginia Wesleyan
-Wofford,North Georgia
-Yale,Carnegie Mellon
-Kansas State,Washburn
-Alabama,Oglethorpe
-Arkansas,Drury
-Army,Kansas
-Auburn,Spring Hill
-Baylor,Hardin-Simmons
-Brown,Colby
-California,Mare Island Marines
-Carnegie Mellon,Waynesburg
-Centre,Mississippi
-Chattanooga,Cumberland
-Chicago,Georgia
-Citadel,Parris Island Marines
-Clemson,Newberry
-Coe,Iowa State
-Colgate,Allegheny
-Colorado,Regis (CO)
-Colorado Mines,Wyoming
-Columbia,Amherst
-Cornell,Niagara
-Daniel Baker,Texas Christian
-Dartmouth,Maine
-Denver,New Mexico
-%DePauw,Indiana
-Drake,Cornell College
-Duke,Hampden-Sydney
-Fort Benning,Wofford
-Furman,Florida
-Georgia Tech,Davidson
-Gonzaga,Puget Sound
-Harvard,Holy Cross
-Idaho,Whitman
-Iowa,Knox
-Kentucky,Cincinnati
-Lafayette,Pittsburgh
-Lehigh,St. Francis (Pennsylvania)
-Loyola (LA),Louisiana State
-%Marion,Samford
-%Maryland,Richmond
-Mercer,North Georgia
-Michigan,Case
-Minnesota,North Dakota
-Mississippi State,Birmingham-Southern
-Missouri,Grinnell
-Navy,Western Reserve
-Nebraska,South Dakota
-Northwestern,Beloit
-Notre Dame,Saint Louis
-Ohio State,Ohio Wesleyan
-Oklahoma State,Central Oklahoma
-Olympic Club,Stanford
-Oregon,Willamette
-Oregon State,Oregon State Alumni
-Penn State,Gettysburg
-Pennsylvania,Sewanee
-Princeton,Virginia
-Purdue,James Millikin
-Rice,Sam Houston State
-Rutgers,Fordham
-South Carolina,Presbyterian
-Southern California,Pomona-Pitzer
-Southern Methodist,North Texas
-Syracuse,New York University
-Tennessee,Maryville (TN)
-Texas,Phillips
-Tulane,Mississippi College
-Utah,Albertson
-Utah State,Brigham Young
-Vanderbilt,Henderson State
-Virginia Military Institute,Roanoke
-Virginia Tech,William & Mary
-Wake Forest,Elon
-Washington,Montana
-Washington & Jefferson,Westminster (Pennsylvania)
-Washington & Lee,North Carolina State
-Washington (MO),Missouri-Rolla
-West Virginia,Marietta
-Wisconsin,Carleton
-Yale,North Carolina
-Tulsa,Texas A&M
-North Carolina,Duke
-Clemson,Presbyterian
-Utah State,Montana State
-Wofford,Erskine
-Army,Auburn
-Austin,Texas Christian
-Baylor,Rice
-Butler,Illinois
-California,Saint Mary's (CA)
-Carnegie Mellon,Geneva
-Centre,Virginia Tech
-Chattanooga,Emory & Henry
-Chicago,Northwestern
-Colorado,New Mexico
-Colorado State,Wyoming
-Columbia,Wesleyan (CT)
-Cornell,New Hampshire
-Dartmouth,Middlebury
-Denver,Regis (CO)
-Drake,Kansas
-Florida,Rollins
-Georgia,Furman
-Georgia Tech,Alabama
-Grinnell,Saint Louis
-Harvard,Bowdoin
-Iowa,Yale
-Kansas State,Washington (MO)
-Kentucky,Louisville
-Lafayette,Muhlenberg
-Lynchburg,Hampden-Sydney
-Mercer,Birmingham-Southern
-%Michigan,Vanderbilt
-Minnesota,Indiana
-Mississippi,Rhodes
-Mississippi College,Henderson State
-Missouri,Iowa State
-Multnomah A.C.,Oregon
-Navy,Bucknell
-North Carolina,South Carolina
-North Carolina State,Roanoke
-Notre Dame,Purdue
-Ohio State,Oberlin
-Oklahoma,Central Oklahoma
-Oregon State,Pacific (Oregon)
-Ouachita,Arkansas
-Penn State,Lebanon Valley
-Pennsylvania,Maryland
-Princeton,Colgate
-Rutgers,Lehigh
-%Samford,Mississippi State
-Sewanee,Oglethorpe
-Southern California,Arizona
-Southern Methodist,Louisiana State
-Stanford,Santa Clara
-%Syracuse,Brown
-Tennessee,Fort Benning
-Texas,Oklahoma State
-Texas A&M,Southwestern (TX)
-Tulane,Spring Hill
-Utah,Brigham Young
-Virginia,Richmond
-Virginia Military Institute,Morris Harvey
-%Wake Forest,Davidson
-Washington,Idaho
-Washington & Jefferson,Bethany (West Virginia)
-Washington & Lee,Carson-Newman
-Washington State,Gonzaga
-West Virginia,Pittsburgh
-William & Mary,Randolph-Macon
-Wisconsin,South Dakota State
-Colorado College,Western State
-Furman,Citadel
-North Carolina,North Carolina State
-Austin,Southern Methodist
-Oregon,Whitman
-South Carolina,Wofford
-Texas A&M,Louisiana State
-Washington State,Idaho
-Army,New Hampshire
-Auburn,Mercer
-Baylor,Arkansas
-Bethany (West Virginia),Rutgers
-%Birmingham-Southern,Chattanooga
-Brown,Lehigh
-California,Olympic Club
-Chicago,Purdue
-%Colorado College,Colorado State
-Colorado Mines,Utah State
-Columbia,New York University
-Cornell,Colgate
-Denver,Nebraska Wesleyan
-Drake,Washington (MO)
-Elon,Hampden-Sydney
-Florida,American Legion
-Furman,Oglethorpe
-Georgia,Tennessee
-Harvard,Centre
-Howard Payne,Texas Christian
-Iowa,Illinois
-Iowa State,Grinnell
-Kansas,Washburn
-%Kansas State,Oklahoma
-Kentucky,Georgetown (Kentucky)
-Lafayette,Bucknell
-Lynchburg,Wake Forest
-Michigan,Ohio State
-%Minnesota,Northwestern
-Mississippi College,Samford
-Mississippi State,Mississippi
-Navy,Georgia Tech
-Nebraska,Missouri
-Notre Dame,DePauw
-Oklahoma State,Rice
-Parris Island Marines,Newberry
-Penn State,Middlebury
-Pennsylvania,Swarthmore
-Pittsburgh,Syracuse
-Presbyterian,Erskine
-Princeton,Maryland
-Richmond,Roanoke
-%Sewanee,Alabama
-Southern California,Nevada
-Spring Hill,Marion
-Stanford,Saint Mary's (CA)
-Tulane,Fort Benning
-Utah,Colorado
-Vanderbilt,Texas
-Vermont,Dartmouth
-Virginia Military Institute,Virginia
-%Virginia Tech,Davidson
-Washington,Oregon State
-%Washington & Jefferson,Carnegie Mellon
-%West Virginia,Washington & Lee
-William & Mary,Duke
-Wisconsin,Indiana
-Yale,Williams
-Colorado Mines,Brigham Young
-Utah,Wyoming
-Clemson,South Carolina
-%Wake Forest,Guilford
-Arkansas,Louisiana State
-%Army,Yale
-Auburn,Fort Benning
-Baylor,Mississippi College
-Birmingham-Southern,Millsaps
-Brown,Boston University
-California,Southern California
-Carnegie Mellon,Thiel
-Carson-Newman,Wofford
-Centre,Louisville
-Chattanooga,Transylvania
-Coe,Grinnell
-Colgate,Susquehanna
-Colorado State,Utah State
-Duke,Davidson
-Elon,Erskine
-Florida,Samford
-Georgia,Oglethorpe
-Gonzaga,Montana
-Harvard,Dartmouth
-Indiana,Michigan State
-Iowa,Purdue
-Iowa State,Washington (MO)
-%Kansas,Kansas State
-Kentucky,Sewanee
-Lafayette,Boston College
-Lehigh,Muhlenberg
-Michigan,Illinois
-Minnesota,Ohio State
-Missouri,Saint Louis
-Nebraska,Oklahoma
-North Carolina,Maryland
-Notre Dame,Georgia Tech
-Oregon,Idaho
-Pennsylvania,Navy
-Pittsburgh,Bucknell
-Presbyterian,Citadel
-Princeton,Chicago
-Rice,Southwestern (TX)
-Richmond,Furman
-Southern Methodist,Oklahoma State
-Spring Hill,Loyola (LA)
-Stanford,Oregon State
-%Syracuse,Penn State
-Tennessee,Mississippi
-Texas,Alabama
-Texas A&M,Ouachita
-Tulane,Mississippi State
-Tulsa,Texas Christian
-Vanderbilt,Mercer
-Virginia,Johns Hopkins
-Virginia Military Institute,North Carolina State
-Virginia Tech,Catholic
-Washington,Washington State
-Washington & Jefferson,West Virginia Wesleyan
-Washington & Lee,Lynchburg
-West Virginia,Rutgers
-William & Mary,Hampden-Sydney
-Williams,Columbia
-Denver,Colorado
-%Texas Christian,Hardin-Simmons
-Louisiana State,Spring Hill
-Navy,Penn State
-Alabama,Pennsylvania
-Army,St. Bonaventure
-Auburn,Georgia
-Baylor,Texas A&M
-California,Washington State
-Carnegie Mellon,Grove City
-Carson-Newman,Mercer
-Centre,Kentucky
-Colgate,Lehigh
-Colorado,Colorado State
-Cornell,Columbia
-Dartmouth,Boston University
-Denver,Wyoming
-Drake,Iowa State
-Duke,Oglethorpe
-Fort Benning,Talladega
-Furman,Erskine
-Georgia Tech,Clemson
-Gonzaga,Montana State
-Grinnell,Washington (MO)
-Harvard,Florida
-Illinois,Northwestern
-Kansas,Oklahoma
-Kansas State,Missouri
-Michigan,Michigan State
-Mississippi,Birmingham-Southern
-Mississippi College,Millsaps
-Multnomah A.C.,Oregon State
-Newberry,Citadel
-North Carolina,Tulane
-North Carolina State,Davidson
-Notre Dame,Indiana
-Oregon,Pacific (Oregon)
-%Ouachita,Mississippi State
-Pittsburgh,Geneva
-Presbyterian,Wofford
-Princeton,Swarthmore
-Richmond,Randolph-Macon
-Roanoke,Hampden-Sydney
-Sewanee,South Carolina
-Southern California,Occidental
-Southern Methodist,Southwestern (TX)
-Stanford,Nevada
-Syracuse,Nebraska
-Tennessee Medical College,Chattanooga
-Texas,Rice
-Tulsa,Arkansas
-Union (Tennessee),Samford
-Utah,Colorado College
-Utah State,Montana Tech
-Vanderbilt,Tennessee
-Virginia,Washington & Lee
-Virginia Military Institute,Catholic
-Virginia Tech,Maryland
-Wabash,Purdue
-Washington & Jefferson,Lafayette
-West Virginia,Cincinnati
-William & Mary,Wake Forest
-Wisconsin,Minnesota
-Yale,Brown
-Rutgers,Louisiana State
-Alabama,Louisiana State
-Auburn,Tulane
-Boston College,Baylor
-Brown,Bates
-Bucknell,Lehigh
-California,Washington
-Centre,Washington & Lee
-Chattanooga,Mercer
-Chicago,Ohio State
-Clemson,Citadel
-Colgate,Rochester
-Colorado College,Colorado
-%Colorado Mines,Denver
-Columbia,Middlebury
-Cornell,Dartmouth
-Cornell College,Grinnell
-Davidson,Wofford
-Drake,Colorado State
-Duke,Wake Forest
-Florida,Mississippi College
-%Georgia,Virginia
-Georgia Tech,Georgetown
-Hampden-Sydney,Emory & Henry
-Idaho,Utah
-Illinois,Wisconsin
-Iowa,Minnesota
-Kansas State,Iowa State
-Lafayette,Rutgers
-Mississippi,Hendrix
-Navy,Xavier
-Nebraska,Kansas
-Newberry,Erskine
-North Carolina,Virginia Military Institute
-Northwestern,Purdue
-%Notre Dame,Army
-Oglethorpe,Fort Benning
-Oklahoma,Missouri
-Oregon,Washington State
-Penn State,Carnegie Mellon
-Pittsburgh,Pennsylvania
-Presbyterian,North Georgia
-Princeton,Harvard
-Rice,Arkansas
-Richmond,Lynchburg
-Sewanee,Birmingham-Southern
-South Carolina,Furman
-Southern California,Stanford
-Southern Methodist,Texas A&M
-Spring Hill,Samford
-Syracuse,McGill
-Tennessee,Mississippi State
-Texas,Southwestern (TX)
-Texas Christian,Oklahoma State
-Utah State,Wyoming
-Vanderbilt,Kentucky
-Virginia Tech,North Carolina State
-Washington & Jefferson,Wabash
-West Virginia,Indiana
-William & Mary,Roanoke
-Yale,Maryland
-Brigham Young,Wyoming
-Millsaps,Samford
-South Carolina,Citadel
-Arkansas,Southern Methodist
-Army,Bates
-Auburn,Centre
-Baylor,Oklahoma State
-Brown,Harvard
-California,Nevada
-Carnegie Mellon,Allegheny
-Central Oklahoma,Iowa State
-Chicago,Illinois
-Clemson,Erskine
-Colorado State,Colorado Mines
-Cornell,Albright
-Dartmouth,Columbia
-Denver,Colorado College
-Drake,Grinnell
-Duke,Randolph-Macon
-Florida,Tulane
-Fort Benning,Parris Island Marines
-Furman,Wofford
-Georgetown (Kentucky),Chattanooga
-Georgia Tech,North Carolina State
-Iowa,Ohio State
-Kansas,Colorado
-Kentucky,Alabama
-Lehigh,Lebanon Valley
-Maryland,Johns Hopkins
-Mercer,Oglethorpe
-Michigan,Wisconsin
-Mississippi College,Birmingham-Southern
-Mississippi State,Louisiana State
-Missouri,Washington (MO)
-Multnomah A.C.,Gonzaga
-Nebraska,Kansas State
-North Carolina,Davidson
-Northwestern,Monmouth
-Notre Dame,Butler
-Oregon,Oregon State
-Pennsylvania,Penn State
-Pittsburgh,Washington & Jefferson
-Princeton,Yale
-Richmond,Hampden-Sydney
-Rutgers,New York University
-Southern California,Idaho
-Spring Hill,Louisiana-Lafayette
-Syracuse,Colgate
-Tennessee,Sewanee
-Tennessee Medical College,Mississippi
-Texas,Oklahoma
-Texas A&M,Rice
-%Texas Christian,Trinity (Texas)
-Utah,Whitman
-Vanderbilt,Georgia
-Virginia Military Institute,George Washington
-Virginia Tech,Washington & Lee
-Washington,Stanford
-West Virginia,Virginia
-William & Mary,Gallaudet
-Gonzaga,Wyoming
-Colorado,Colorado Mines
-Alabama,Georgia
-Army,Navy
-Bucknell,Rutgers
-California,Stanford
-Citadel,Southern College
-Colorado State,Brigham Young
-Dartmouth,Brown
-Detroit Mercy,Washington & Jefferson
-Drake,Mississippi State
-%Duke,Presbyterian
-Florida,Oglethorpe
-Fort Benning,Mississippi
-Furman,Clemson
-Gonzaga,Idaho
-Harvard,Yale
-%Indiana,Purdue
-Iowa,Northwestern
-Lafayette,Lehigh
-Maryland,Catholic
-Mercer,Maryville (TN)
-Michigan,Minnesota
-Mississippi College,Spring Hill
-Nebraska,Iowa State
-North Carolina State,Wake Forest
-Notre Dame,Carnegie Mellon
-Ohio State,Illinois
-%Oklahoma,Oklahoma State
-Oregon State,Washington State
-Rice,Arizona
-Samford,Birmingham-Southern
-Vanderbilt,Sewanee
-West Virginia,Ohio
-%Wisconsin,Chicago
-Alabama,Mississippi State
-Baylor,Southern Methodist
-Centre,South Carolina
-Chattanooga,Oglethorpe
-Colgate,Columbia
-Colorado Mines,Colorado College
-Cornell,Pennsylvania
-Furman,Davidson
-Georgia Tech,Auburn
-Kansas State,Texas Christian
-Louisiana State,Tulane
-Maryland,North Carolina State
-Mississippi,Millsaps
-Missouri,Kansas
-Nebraska,Notre Dame
-North Carolina,Virginia
-Oklahoma State,Arkansas
-%Oregon,Washington
-Pittsburgh,Penn State
-Richmond,William & Mary
-Southern California,Washington State
-Tennessee,Kentucky
-Texas A&M,Texas
-Utah,Utah State
-Virginia Tech,Virginia Military Institute
-Washington & Lee,Johns Hopkins
-West Virginia,Washington & Jefferson
-Wyoming,Brigham Young
-Citadel,Erskine
-Colorado State,Denver
-Duke,Wofford
-Florida,Clemson
-Fort Benning,Mercer
-Georgetown,Lafayette
-Idaho,Montana
-%Oklahoma,Washington (MO)
-Presbyterian,Newberry
-%Southern Methodist,Texas Christian
-Wake Forest,Hampden-Sydney
-Haskell,Baylor
-Arizona,Utah State
-Phillips,Baylor
-West Virginia,Gonzaga
-Pittsburgh,Stanford
-Southern California,Penn State
+RANK,TEAM,RATING,RAW_SCORE,RAW_SCORE_PER_TEAM,WINS,LOSSES
+1,MT UNION,1.0000,225.5670,0.3357,15,0
+2,WI OSHKOSH,0.9914,222.3175,0.3308,12,1
+3,UCF,0.9900,221.8058,0.3301,13,0
+4,C WASHINGTON,0.9878,220.9578,0.3288,11,1
+5,M HARDIN-BAYLOR,0.9867,220.5455,0.3282,14,1
+6,TX A&M COMMERCE,0.9852,219.9717,0.3273,14,1
+7,ALABAMA,0.9844,219.6655,0.3269,13,1
+8,GEORGIA,0.9841,219.5421,0.3267,13,2
+9,BROCKPORT ST,0.9812,218.4547,0.3251,13,1
+10,INDIANA PA,0.9769,216.8493,0.3227,13,1
+11,CLEMSON,0.9759,216.4428,0.3221,12,2
+12,WISCONSIN,0.9737,215.6339,0.3209,13,1
+13,TRINITY CT,0.9728,215.2910,0.3204,8,1
+14,N DAKOTA ST,0.9712,214.7012,0.3195,14,1
+15,OKLAHOMA,0.9700,214.2482,0.3188,12,2
+16,OHIO ST,0.9696,214.0843,0.3186,12,2
+17,WITTENBERG,0.9680,213.4731,0.3177,10,1
+18,DELAWARE VAL,0.9667,212.9880,0.3169,12,1
+19,WARTBURG,0.9657,212.6245,0.3164,12,1
+20,MIDWEST TX ST,0.9628,211.5256,0.3148,10,1
+21,MN MANKATO,0.9624,211.3775,0.3145,13,1
+22,HUMBOLDT ST,0.9599,210.4344,0.3131,8,2
+23,JAMES MADISON,0.9580,209.6953,0.3120,14,1
+24,LINFIELD,0.9558,208.8599,0.3108,9,2
+25,FORT HAYS ST,0.9551,208.6029,0.3104,11,1
+26,BERRY,0.9511,207.1040,0.3082,11,1
+27,YALE,0.9505,206.8673,0.3078,9,1
+28,SPRINGFIELD,0.9488,206.2175,0.3069,10,1
+29,WEST ALABAMA,0.9477,205.8247,0.3063,10,3
+30,PENN STATE,0.9477,205.8229,0.3063,11,2
+31,CASE WESTERN,0.9453,204.9061,0.3049,11,1
+32,TRINE,0.9430,204.0409,0.3036,11,1
+33,ST THOMAS MN,0.9423,203.7843,0.3033,11,2
+34,N CENTRAL IL,0.9399,202.8760,0.3019,10,2
+35,IL WESLEYAN,0.9392,202.5797,0.3015,9,2
+36,AMHERST,0.9364,201.5458,0.2999,7,2
+37,NOTRE DAME,0.9356,201.2423,0.2995,10,3
+38,MIDDLEBURY,0.9348,200.9476,0.2990,7,2
+39,WEST FLORIDA,0.9322,199.9649,0.2976,11,4
+40,MIAMI FL,0.9317,199.7539,0.2973,10,3
+41,FROSTBURG ST,0.9291,198.7900,0.2958,11,2
+42,NC A&T,0.9274,198.1545,0.2949,12,0
+43,FRANK & MARSH,0.9254,197.3927,0.2937,10,1
+44,FERRIS ST,0.9249,197.1783,0.2934,11,2
+45,ASHLAND,0.9235,196.6513,0.2926,11,2
+46,WESLEY DE,0.9229,196.4362,0.2923,10,2
+47,WASH & JEFF,0.9203,195.4714,0.2909,11,1
+48,CENTRE,0.9193,195.0684,0.2903,9,1
+49,ASSUMPTION,0.9178,194.5072,0.2894,11,2
+50,S DAKOTA ST,0.9140,193.0860,0.2873,11,3
+51,JOHNS HOPKINS,0.9126,192.5371,0.2865,9,2
+52,FRAMINGHAM ST,0.9107,191.8136,0.2854,10,1
+53,WI LACROSSE,0.9089,191.1526,0.2845,8,2
+54,AUBURN,0.9085,191.0024,0.2842,10,4
+55,MICHIGAN ST,0.9077,190.6880,0.2838,10,3
+56,WI WHITEWATER,0.9051,189.6918,0.2823,7,3
+57,USC,0.9015,188.3681,0.2803,11,3
+58,WHEATON IL,0.8993,187.5220,0.2791,8,2
+59,TCU,0.8958,186.1899,0.2771,11,3
+60,HUSSON,0.8948,185.8287,0.2765,10,2
+61,WABASH,0.8923,184.8822,0.2751,8,2
+62,DARTMOUTH,0.8913,184.4894,0.2745,8,2
+63,ST JOHN'S MN,0.8890,183.6134,0.2732,9,2
+64,COLUMBIA,0.8881,183.2980,0.2728,8,2
+65,CONCORDIA MHD,0.8860,182.5042,0.2716,8,2
+66,INDIANAPOLIS,0.8837,181.6385,0.2703,11,1
+67,HARDING,0.8834,181.4952,0.2701,11,4
+68,WI PLATTEVILLE,0.8808,180.5292,0.2686,7,3
+69,MONMOUTH IL,0.8780,179.4835,0.2671,9,2
+70,RENSSELAER,0.8768,179.0130,0.2664,8,3
+71,DEPAUW,0.8753,178.4561,0.2656,8,2
+72,WILLIAMS,0.8735,177.7720,0.2645,6,3
+73,NORTHWESTERN,0.8710,176.8316,0.2631,10,3
+74,KENNESAW,0.8692,176.1389,0.2621,12,2
+75,VIRGINIA ST,0.8669,175.2742,0.2608,10,1
+76,SAMFORD,0.8634,173.9449,0.2588,8,4
+77,WESLEYAN CT,0.8623,173.5203,0.2582,6,3
+78,WASHINGTON,0.8607,172.9511,0.2574,10,3
+79,PLYMOUTH ST,0.8570,171.5361,0.2553,9,2
+80,WEST GEORGIA,0.8552,170.8626,0.2543,9,4
+81,W NEW ENGLAND,0.8534,170.1849,0.2533,8,3
+82,OKLAHOMA ST,0.8526,169.8700,0.2528,10,3
+83,SAM HOUSTON ST,0.8501,168.9437,0.2514,12,2
+84,WINONA ST,0.8472,167.8276,0.2497,10,2
+85,DELTA ST,0.8460,167.3915,0.2491,9,4
+86,WORCESTER TECH,0.8443,166.7373,0.2481,9,2
+87,HARDIN-SIMMONS,0.8413,165.6018,0.2464,9,2
+88,WASHINGTON ST,0.8408,165.4024,0.2461,9,4
+89,SOUTH FLORIDA,0.8379,164.3117,0.2445,10,2
+90,HENDRIX,0.8370,163.9702,0.2440,8,2
+91,STANFORD,0.8342,162.9382,0.2425,9,5
+92,BOISE ST,0.8311,161.7482,0.2407,11,3
+93,SHEPHERD,0.8310,161.7059,0.2406,10,1
+94,HOPE,0.8284,160.7146,0.2392,8,2
+95,CW POST,0.8270,160.2000,0.2384,8,2
+96,WI STOUT,0.8244,159.2013,0.2369,5,4
+97,MILLIKIN,0.8216,158.1528,0.2353,7,3
+98,ITHACA,0.8202,157.6479,0.2346,8,3
+99,VALDOSTA ST,0.8175,156.5969,0.2330,5,4
+100,WINGATE,0.8144,155.4542,0.2313,9,2
+101,WEBER ST,0.8132,154.9919,0.2306,11,3
+102,CARTHAGE,0.8106,154.0118,0.2292,7,3
+103,IOWA,0.8090,153.3935,0.2283,8,5
+104,NC STATE,0.8086,153.2579,0.2281,9,4
+105,SOUTH CAROLINA,0.8065,152.4643,0.2269,9,4
+106,E NEW MEXICO,0.8028,151.0552,0.2248,8,2
+107,NORTH ALABAMA,0.8010,150.3934,0.2238,5,5
+108,WHITWORTH,0.8001,150.0251,0.2233,8,2
+109,GEORGE FOX,0.7987,149.5013,0.2225,7,3
+110,LSU,0.7969,148.8100,0.2214,9,4
+111,TROY,0.7943,147.8413,0.2200,11,2
+112,MEMPHIS,0.7924,147.1137,0.2189,10,3
+113,IOWA ST,0.7905,146.4059,0.2179,8,5
+114,SHIPPENSBURG,0.7883,145.5730,0.2166,10,2
+115,MISSISSIPPI ST,0.7870,145.0700,0.2159,9,4
+116,NW MISSOURI,0.7850,144.3293,0.2148,9,3
+117,HEIDELBERG,0.7842,144.0282,0.2143,7,3
+118,OHIO NORTHERN,0.7828,143.4976,0.2135,7,3
+119,VIRGINIA TECH,0.7786,141.9090,0.2112,9,4
+120,OUACHITA,0.7769,141.2843,0.2102,9,3
+121,WEST CHESTER,0.7757,140.8225,0.2096,9,4
+122,SOUTHERN UTAH,0.7723,139.5394,0.2076,9,3
+123,CENT ARKANSAS,0.7692,138.3779,0.2059,10,2
+124,ALFRED,0.7681,137.9602,0.2053,8,3
+125,DENISON,0.7670,137.5135,0.2046,7,3
+126,WOFFORD,0.7641,136.4438,0.2030,10,3
+127,REDLANDS,0.7632,136.0821,0.2025,7,2
+128,HOBART & SMITH,0.7597,134.7829,0.2006,7,3
+129,CHAPMAN,0.7568,133.6831,0.1989,6,3
+130,C MISSOURI,0.7564,133.5352,0.1987,9,3
+131,JOHN CARROLL,0.7545,132.7944,0.1976,6,4
+132,FINDLAY,0.7513,131.5913,0.1958,10,3
+133,BOWIE ST,0.7490,130.7121,0.1945,9,2
+134,SLIPPERY ROCK,0.7475,130.1622,0.1937,8,3
+135,KUTZTOWN,0.7456,129.4424,0.1926,8,3
+136,KANSAS ST,0.7435,128.6473,0.1914,8,5
+137,SAN DIEGO ST,0.7421,128.1350,0.1907,10,3
+138,AZUSA PACIFIC,0.7402,127.3990,0.1896,7,4
+139,ARMY,0.7379,126.5370,0.1883,10,3
+140,FRESNO ST,0.7365,126.0062,0.1875,10,4
+141,TUFTS,0.7350,125.4394,0.1867,5,4
+142,CALIFORNIA PA,0.7320,124.3079,0.1850,9,3
+143,SIOUX FALLS,0.7285,122.9929,0.1830,9,3
+144,FL ATLANTIC,0.7271,122.4685,0.1822,11,3
+145,SUSQUEHANNA,0.7250,121.6679,0.1811,8,3
+146,OTTERBEIN,0.7240,121.2975,0.1805,6,4
+147,MARIETTA,0.7203,119.9026,0.1784,6,4
+148,BALDWIN-WALLACE,0.7188,119.3293,0.1776,6,4
+149,GRAMBLING,0.7156,118.0957,0.1757,11,2
+150,GRAND VALLEY ST,0.7141,117.5535,0.1749,8,3
+151,CORTLAND ST,0.7134,117.2948,0.1745,7,4
+152,WAKE FOREST,0.7104,116.1379,0.1728,8,5
+153,NY MARITIME,0.7073,114.9683,0.1711,9,2
+154,WASH & LEE,0.7069,114.8101,0.1708,8,3
+155,UNION NY,0.7053,114.2170,0.1700,7,4
+156,PITTSBURG ST,0.7020,112.9581,0.1681,8,4
+157,CATAWBA,0.7001,112.2481,0.1670,9,2
+158,BENTLEY,0.6980,111.4605,0.1659,6,4
+159,WESTMINSTER PA,0.6954,110.4954,0.1644,7,3
+160,MICHIGAN,0.6936,109.8086,0.1634,8,5
+161,W CONNECTICUT,0.6916,109.0480,0.1623,7,3
+162,OH DOMINICAN,0.6895,108.2390,0.1611,7,3
+163,MUHLENBERG,0.6878,107.5915,0.1601,8,3
+164,CURRY,0.6853,106.6789,0.1587,8,3
+165,PENN,0.6843,106.2895,0.1582,6,4
+166,BOSTON COLLEGE,0.6819,105.3720,0.1568,7,6
+167,NORTHERN IOWA,0.6795,104.4732,0.1555,8,5
+168,LOUISVILLE,0.6787,104.1574,0.1550,8,5
+169,TOLEDO,0.6760,103.1365,0.1535,11,3
+170,TRINITY TX,0.6739,102.3443,0.1523,6,4
+171,ARKANSAS TECH,0.6722,101.7241,0.1514,8,4
+172,MN DULUTH,0.6720,101.6206,0.1512,9,3
+173,C OKLAHOMA,0.6692,100.5944,0.1497,8,4
+174,MCNEESE ST,0.6647,98.8906,0.1472,9,2
+175,STONY BROOK,0.6635,98.4235,0.1465,10,3
+176,JACKSONVILLE ST,0.6607,97.3792,0.1449,10,2
+177,GEORGIA TECH,0.6591,96.7807,0.1440,5,6
+178,FLORIDA ST,0.6590,96.7095,0.1439,7,6
+179,W ILLINOIS,0.6559,95.5602,0.1422,8,4
+180,ARIZONA ST,0.6548,95.1366,0.1416,7,6
+181,DUKE,0.6533,94.5569,0.1407,7,6
+182,OREGON,0.6518,93.9914,0.1399,7,6
+183,S ARKANSAS,0.6496,93.1734,0.1387,7,4
+184,TEXAS,0.6489,92.9095,0.1383,7,6
+185,LAKELAND,0.6443,91.1807,0.1357,8,3
+186,WEST VIRGINIA,0.6435,90.8860,0.1352,7,6
+187,SE OKLAHOMA,0.6415,90.1076,0.1341,7,4
+188,ROSE-HULMAN,0.6361,88.0793,0.1311,8,2
+189,TEXAS TECH,0.6357,87.9207,0.1308,6,7
+190,TEXAS A&M,0.6346,87.4873,0.1302,7,6
+191,HOUSTON,0.6311,86.1929,0.1283,7,5
+192,HUNTINGDON,0.6286,85.2352,0.1268,9,2
+193,ALBRIGHT,0.6257,84.1523,0.1252,8,3
+194,MACMURRAY,0.6257,84.1460,0.1252,8,2
+195,EUREKA,0.6234,83.2865,0.1239,8,3
+196,E WASHINGTON,0.6234,83.2770,0.1239,7,4
+197,UTAH,0.6213,82.4628,0.1227,7,6
+198,UCLA,0.6201,82.0132,0.1220,6,7
+199,MIT,0.6156,80.3072,0.1195,7,3
+200,CENTRAL IA,0.6153,80.2214,0.1194,7,3
+201,SOUTH DAKOTA,0.6133,79.4388,0.1182,8,5
+202,NAVY,0.6104,78.3542,0.1166,7,6
+203,ARIZONA,0.6091,77.8627,0.1159,7,6
+204,ELON,0.6068,77.0074,0.1146,8,4
+205,TUSKEGEE,0.6036,75.7856,0.1128,9,2
+206,PURDUE,0.6015,74.9830,0.1116,7,6
+207,ST SCHOLASTICA,0.6000,74.4205,0.1107,7,3
+208,HENDERSON ST,0.5995,74.2430,0.1105,6,5
+209,FLORIDA TECH,0.5966,73.1617,0.1089,5,6
+210,MESA ST,0.5948,72.4725,0.1078,9,2
+211,FURMAN,0.5941,72.2201,0.1075,8,5
+212,NEW HAMPSHIRE,0.5905,70.8302,0.1054,9,5
+213,CARSON-NEWMAN,0.5879,69.8459,0.1039,8,3
+214,NORTH TEXAS,0.5866,69.3637,0.1032,9,5
+215,STONEHILL,0.5857,69.0316,0.1027,6,4
+216,BLOOMSBURG,0.5849,68.7089,0.1022,7,4
+217,WOOSTER,0.5827,67.9001,0.1010,6,4
+218,PITT,0.5812,67.3339,0.1002,5,7
+219,VIRGINIA,0.5781,66.1546,0.0984,6,7
+220,CALIFORNIA,0.5780,66.1377,0.0984,5,7
+221,SALVE REGINA,0.5733,64.3384,0.0957,6,3
+222,OHIO WESLEYAN,0.5726,64.0680,0.0953,5,5
+223,KENTUCKY,0.5722,63.9288,0.0951,7,6
+224,ALBANY GA,0.5666,61.8241,0.0920,6,4
+225,URSINUS,0.5652,61.2758,0.0912,6,4
+226,OLE MISS,0.5629,60.4111,0.0899,6,6
+227,LAKE FOREST,0.5611,59.7157,0.0889,8,2
+228,E TEXAS BAP,0.5597,59.1919,0.0881,7,3
+229,EDINBORO,0.5585,58.7645,0.0874,7,4
+230,WASHBURN,0.5557,57.7007,0.0859,7,5
+231,SAN DIEGO,0.5538,56.9611,0.0848,10,3
+232,SALISBURY,0.5509,55.8756,0.0831,7,4
+233,FRANKLIN IN,0.5509,55.8645,0.0831,8,3
+234,YOUNGSTOWN ST,0.5487,55.0402,0.0819,6,5
+235,TX LUTHERAN,0.5449,53.5950,0.0798,6,4
+236,NEW HAVEN,0.5441,53.2927,0.0793,6,4
+237,SW UNIV TX,0.5436,53.1036,0.0790,6,4
+238,SYRACUSE,0.5414,52.2982,0.0778,4,8
+239,EMPORIA ST,0.5394,51.5166,0.0767,6,5
+240,CARNEGIE MELLON,0.5362,50.3078,0.0749,7,4
+241,DELAWARE,0.5356,50.0821,0.0745,7,4
+242,MONMOUTH NJ,0.5321,48.7759,0.0726,9,3
+243,ILLINOIS ST,0.5284,47.3846,0.0705,6,5
+244,TULANE,0.5271,46.8768,0.0698,5,7
+245,SOUTHERN METHODIST,0.5267,46.7435,0.0696,7,6
+246,MISSOURI,0.5250,46.1066,0.0686,7,6
+247,CSU-PUEBLO,0.5244,45.8705,0.0683,9,3
+248,NOTRE DAME OH,0.5200,44.2035,0.0658,8,3
+249,NORTH GREENVILLE,0.5185,43.6208,0.0649,4,6
+250,NORTHERN ARIZONA,0.5179,43.4228,0.0646,7,5
+251,MERCHANT MARINE,0.5158,42.6191,0.0634,6,4
+252,TEMPLE,0.5153,42.4384,0.0632,7,6
+253,NICHOLLS ST,0.5119,41.1364,0.0612,8,4
+254,HARVARD,0.5108,40.7235,0.0606,5,5
+255,PRINCETON,0.5087,39.9454,0.0594,5,5
+256,BENEDICTINE IL,0.5059,38.8815,0.0579,7,3
+257,CS SACRAMENTO,0.5045,38.3498,0.0571,7,4
+258,CENTRAL CONN,0.5009,36.9974,0.0551,8,4
+259,LUTHER IA,0.5000,36.6513,0.0545,6,4
+260,RANDOLPH MACON,0.4989,36.2357,0.0539,7,3
+261,FLORIDA,0.4970,35.5128,0.0528,4,7
+262,MONTANA,0.4960,35.1329,0.0523,7,4
+263,RICHMOND,0.4920,33.6149,0.0500,6,5
+264,S CONNECTICUT,0.4914,33.3836,0.0497,5,5
+265,WIDENER,0.4891,32.5465,0.0484,7,4
+266,BENEDICT,0.4870,31.7456,0.0472,7,2
+267,DUBUQUE,0.4867,31.6112,0.0470,6,4
+268,ST NORBERT,0.4835,30.3969,0.0452,7,3
+269,N ILLINOIS,0.4816,29.6950,0.0442,8,5
+270,NORTHWOOD MI,0.4808,29.3984,0.0437,7,4
+271,OHIO,0.4783,28.4324,0.0423,9,4
+272,HAMPDEN-SYDNEY,0.4760,27.5726,0.0410,6,4
+273,BUFFALO ST,0.4736,26.6769,0.0397,6,5
+274,VANDERBILT,0.4727,26.3383,0.0392,5,7
+275,FERRUM,0.4703,25.4391,0.0379,8,2
+276,C MICHIGAN,0.4688,24.8460,0.0370,8,5
+277,MARYLAND,0.4684,24.7185,0.0368,4,8
+278,FLORIDA INTL,0.4655,23.6297,0.0352,8,5
+279,NW OKLAHOMA ST,0.4626,22.5170,0.0335,5,6
+280,APPALACHIAN ST,0.4622,22.3488,0.0333,9,4
+281,ARK MONTICELLO,0.4621,22.3330,0.0332,5,6
+282,STEVENSON,0.4597,21.4334,0.0319,6,5
+283,GANNON,0.4575,20.5992,0.0307,5,6
+284,BEMIDJI ST,0.4554,19.8124,0.0295,8,3
+285,PAC LUTHERAN,0.4535,19.0753,0.0284,4,4
+286,PACIFIC OR,0.4531,18.9164,0.0281,4,4
+287,INDIANA,0.4513,18.2463,0.0272,5,7
+288,VIRGINIA UNION,0.4474,16.7614,0.0249,6,4
+289,CAL LUTHERAN,0.4463,16.3390,0.0243,5,3
+290,WYOMING,0.4459,16.2065,0.0241,8,5
+291,SHENANDOAH,0.4412,14.4264,0.0215,6,4
+292,BETHUNE-COOKMAN,0.4400,13.9649,0.0208,7,4
+293,BETHEL MN,0.4394,13.7367,0.0204,5,5
+294,TIFFIN,0.4368,12.7516,0.0190,6,5
+295,FAIRMONT ST,0.4341,11.7653,0.0175,8,3
+296,WESTMINSTER MO,0.4337,11.5889,0.0172,6,4
+297,WI STEVENS PT,0.4323,11.0545,0.0165,4,6
+298,NORTHWESTERN MN,0.4301,10.2254,0.0152,6,4
+299,DRAKE,0.4273,9.1632,0.0136,7,4
+300,SOUTHERN MISS,0.4259,8.6555,0.0129,8,5
+301,WORCESTER ST,0.4256,8.5491,0.0127,6,4
+302,MONTANA ST,0.4243,8.0503,0.0120,5,6
+303,MARSHALL,0.4225,7.3587,0.0110,8,5
+304,LOUISIANA TECH,0.4187,5.9132,0.0088,7,6
+305,THOMAS MORE,0.4166,5.1311,0.0076,6,4
+306,SIMPSON IA,0.4164,5.0557,0.0075,5,5
+307,COLORADO,0.4145,4.3308,0.0064,5,7
+308,MINNESOTA,0.4122,3.4894,0.0052,5,7
+309,CHICAGO,0.4109,2.9659,0.0044,6,4
+310,WASHINGTON MO,0.4089,2.2080,0.0033,3,6
+311,HILLSDALE,0.4059,1.1090,0.0017,7,4
+312,AKRON,0.4037,0.2756,0.0004,7,7
+313,MERCER,0.4022,-0.3228,-0.0005,5,6
+314,GUST ADOLPHUS,0.4020,-0.3694,-0.0005,5,5
+315,TENNESSEE,0.4003,-1.0070,-0.0015,4,8
+316,WI RIVER FALLS,0.3975,-2.0635,-0.0031,4,6
+317,SOUTHERN NAZARENE,0.3962,-2.5689,-0.0038,4,7
+318,WAYNE ST NE,0.3946,-3.1911,-0.0047,6,5
+319,UPPER IOWA,0.3945,-3.2040,-0.0048,6,5
+320,NORTHERN ST SD,0.3913,-4.4277,-0.0066,6,5
+321,UC DAVIS,0.3904,-4.7524,-0.0071,5,6
+322,W CAROLINA,0.3896,-5.0697,-0.0075,7,5
+323,UAB,0.3877,-5.7947,-0.0086,8,5
+324,ADRIAN,0.3867,-6.1652,-0.0092,5,5
+325,NEBRASKA,0.3846,-6.9701,-0.0104,4,8
+326,MTSU,0.3811,-8.2746,-0.0123,7,6
+327,NORTH CAROLINA,0.3794,-8.9344,-0.0133,3,9
+328,GUILFORD,0.3790,-9.0833,-0.0135,5,5
+329,JACKSONVILLE,0.3756,-10.3412,-0.0154,7,4
+330,BUFFALO,0.3748,-10.6474,-0.0158,6,6
+331,W MICHIGAN,0.3742,-10.8971,-0.0162,6,6
+332,ARKANSAS,0.3730,-11.3519,-0.0169,4,8
+333,MILES,0.3692,-12.7604,-0.0190,6,4
+334,MERCYHURST,0.3682,-13.1424,-0.0196,5,6
+335,ALCORN ST,0.3671,-13.5803,-0.0202,7,5
+336,ANGELO ST,0.3650,-14.3543,-0.0214,6,5
+337,UT SAN ANTONIO,0.3622,-15.4026,-0.0229,6,5
+338,SOUTHERN UNIV,0.3609,-15.9022,-0.0237,7,4
+339,CHARLESTON SO,0.3602,-16.1683,-0.0241,6,5
+340,LEBANON VAL,0.3575,-17.1946,-0.0256,5,5
+341,AVERETT,0.3559,-17.8146,-0.0265,6,4
+342,COLORADO MINES,0.3535,-18.6910,-0.0278,7,4
+343,AUSTIN PEAY,0.3534,-18.7600,-0.0279,8,4
+344,OLIVET MI,0.3521,-19.2238,-0.0286,5,5
+345,FORT VALLEY ST,0.3486,-20.5510,-0.0306,5,5
+346,MISSOURI S&T,0.3478,-20.8737,-0.0311,7,4
+347,MANCHESTER,0.3469,-21.1831,-0.0315,6,4
+348,TARLETON ST,0.3456,-21.6804,-0.0323,6,6
+349,SE LOUISIANA,0.3424,-22.8827,-0.0341,6,5
+350,MT ST JOSEPH,0.3417,-23.1684,-0.0345,6,4
+351,FAYETTEVILLE ST,0.3391,-24.1357,-0.0359,6,5
+352,CITADEL,0.3384,-24.4245,-0.0363,5,6
+353,BUTLER,0.3366,-25.0912,-0.0373,6,5
+354,W SALEM ST,0.3364,-25.1649,-0.0374,6,4
+355,NC CENTRAL,0.3331,-26.3974,-0.0393,7,4
+356,RUTGERS,0.3327,-26.5751,-0.0395,4,8
+357,MCKENDREE,0.3305,-27.3925,-0.0408,7,4
+358,DUQUESNE,0.3288,-28.0320,-0.0417,7,4
+359,WAYNE ST MI,0.3272,-28.6355,-0.0426,5,6
+360,CINCINNATI,0.3262,-29.0289,-0.0432,4,8
+361,ILLINOIS COL,0.3238,-29.9269,-0.0445,5,5
+362,CHRIS NEWPORT,0.3221,-30.5564,-0.0455,5,5
+363,MONTCLAIR ST,0.3218,-30.7003,-0.0457,5,5
+364,TOWSON,0.3195,-31.5377,-0.0469,5,6
+365,TUSCULUM,0.3180,-32.1030,-0.0478,5,5
+366,VILLANOVA,0.3167,-32.6182,-0.0485,5,6
+367,CATHOLIC,0.3153,-33.1474,-0.0493,5,5
+368,COLGATE,0.3149,-33.2920,-0.0495,7,4
+369,LUTHER MN,0.3099,-35.1612,-0.0523,5,5
+370,ST AUGUSTINE'S,0.3089,-35.5677,-0.0529,5,5
+371,MO WESTERN,0.3076,-36.0522,-0.0536,4,7
+372,LINDENWOOD,0.3075,-36.1018,-0.0537,4,7
+373,LIMESTONE,0.3038,-37.4763,-0.0558,4,6
+374,LIBERTY,0.3030,-37.7957,-0.0562,6,5
+375,E MICHIGAN,0.3019,-38.2093,-0.0569,5,7
+376,PRAIRIE VIEW,0.2983,-39.5492,-0.0589,6,5
+377,MIAMI OH,0.2976,-39.8330,-0.0593,5,7
+378,MERRIMACK,0.2963,-40.3313,-0.0600,4,6
+379,KNOX,0.2958,-40.5212,-0.0603,5,5
+380,NEWBERRY,0.2943,-41.0681,-0.0611,5,6
+381,SUL ROSS,0.2918,-42.0087,-0.0625,5,5
+382,KING'S PA,0.2903,-42.5859,-0.0634,5,5
+383,HOWARD,0.2878,-43.5357,-0.0648,7,4
+384,ARKANSAS ST,0.2877,-43.5806,-0.0649,7,5
+385,COLORADO ST,0.2862,-44.1518,-0.0657,7,6
+386,CORNELL,0.2845,-44.7931,-0.0667,3,7
+387,CASTLETON,0.2844,-44.8073,-0.0667,6,4
+388,ALBANY NY,0.2808,-46.1664,-0.0687,4,7
+389,OLD DOMINION,0.2802,-46.3964,-0.0690,5,7
+390,VALPARAISO,0.2770,-47.5969,-0.0708,6,5
+391,BRIDGEWATER VA,0.2748,-48.4485,-0.0721,4,6
+392,SAGINAW VAL,0.2747,-48.4652,-0.0721,5,6
+393,AIR FORCE,0.2731,-49.0969,-0.0731,5,7
+394,CHADRON ST,0.2727,-49.2260,-0.0733,6,5
+395,GEORGIA ST,0.2706,-50.0318,-0.0745,7,5
+396,EAST CAROLINA,0.2687,-50.7498,-0.0755,3,9
+397,GREENVILLE,0.2685,-50.8174,-0.0756,4,6
+398,ETSU,0.2656,-51.9150,-0.0773,4,7
+399,BRYANT,0.2646,-52.3043,-0.0778,6,5
+400,NEW MEXICO ST,0.2628,-52.9618,-0.0788,7,6
+401,MAINE,0.2615,-53.4501,-0.0795,4,6
+402,LYCOMING,0.2613,-53.5498,-0.0797,4,6
+403,COE,0.2597,-54.1575,-0.0806,4,6
+404,KEAN,0.2581,-54.7569,-0.0815,4,6
+405,ROWAN,0.2558,-55.6066,-0.0827,4,6
+406,WKU,0.2542,-56.2381,-0.0837,6,7
+407,OBERLIN,0.2538,-56.3592,-0.0839,4,6
+408,MACALESTER,0.2511,-57.3839,-0.0854,5,5
+409,E ILLINOIS,0.2499,-57.8656,-0.0861,6,5
+410,AUGSBURG,0.2471,-58.9027,-0.0877,4,6
+411,HAMPTON,0.2469,-58.9775,-0.0878,6,5
+412,ST OLAF,0.2467,-59.0601,-0.0879,4,6
+413,ALMA,0.2457,-59.4459,-0.0885,4,6
+414,UTAH ST,0.2428,-60.5394,-0.0901,6,7
+415,AURORA,0.2420,-60.8382,-0.0905,5,5
+416,MICHIGAN TECH,0.2403,-61.4749,-0.0915,4,7
+417,ST CLOUD,0.2389,-62.0152,-0.0923,6,5
+418,SW OKLAHOMA,0.2384,-62.1763,-0.0925,3,8
+419,ALBION,0.2376,-62.4959,-0.0930,4,6
+420,LORAS,0.2360,-63.0834,-0.0939,4,6
+421,TN MARTIN,0.2339,-63.8883,-0.0951,6,5
+422,CHATTANOOGA,0.2324,-64.4773,-0.0959,3,8
+423,ALABAMA ST,0.2309,-65.0379,-0.0968,5,6
+424,POMONA PITZER,0.2289,-65.7702,-0.0979,4,4
+425,RHODE ISLAND,0.2274,-66.3662,-0.0988,3,8
+426,S ILLINOIS,0.2249,-67.3126,-0.1002,4,7
+427,WV STATE,0.2248,-67.3257,-0.1002,6,5
+428,HAMILTON,0.2239,-67.6883,-0.1007,3,6
+429,CLAREMONT M.S,0.2217,-68.4991,-0.1019,4,5
+430,RIPON,0.2203,-69.0488,-0.1028,5,5
+431,COLLEGE OF NJ,0.2191,-69.4998,-0.1034,4,6
+432,MARYVILLE TN,0.2168,-70.3681,-0.1047,5,5
+433,PRESBYTERIAN,0.2153,-70.9142,-0.1055,4,7
+434,CAMPBELL,0.2148,-71.1116,-0.1058,6,5
+435,TENNESSEE ST,0.2134,-71.6414,-0.1066,6,5
+436,LENOIR RHYNE,0.2126,-71.9244,-0.1070,3,7
+437,CONNECTICUT,0.2123,-72.0546,-0.1072,3,9
+438,CHOWAN,0.2094,-73.1387,-0.1088,4,6
+439,LA VERNE,0.2089,-73.3254,-0.1091,3,5
+440,LEHIGH,0.2076,-73.8316,-0.1099,5,7
+441,SW BAPTIST,0.2045,-75.0091,-0.1116,5,5
+442,DIXIE ST,0.2034,-75.4158,-0.1122,5,6
+443,BLUFFTON,0.2030,-75.5620,-0.1124,4,6
+444,WV WESLEYAN,0.2007,-76.4267,-0.1137,5,6
+445,MA DARTMOUTH,0.1996,-76.8501,-0.1144,4,6
+446,NORTHWESTERN LA,0.1984,-77.3132,-0.1150,4,7
+447,AUGUSTANA SD,0.1961,-78.1704,-0.1163,4,7
+448,MORRISVILLE ST,0.1955,-78.4094,-0.1167,4,6
+449,CLARK ATLANTA,0.1934,-79.1922,-0.1178,4,6
+450,W NEW MEXICO,0.1915,-79.9181,-0.1189,4,7
+451,HANOVER,0.1910,-80.1227,-0.1192,4,6
+452,ST FRANCIS PA,0.1898,-80.5470,-0.1199,5,6
+453,UNLV,0.1884,-81.0691,-0.1206,5,7
+454,FT LEWIS,0.1873,-81.5198,-0.1213,5,6
+455,TRUMAN ST,0.1864,-81.8259,-0.1218,5,6
+456,FORDHAM,0.1851,-82.3372,-0.1225,4,7
+457,NE KEARNEY,0.1850,-82.3593,-0.1226,3,8
+458,HOLY CROSS,0.1845,-82.5572,-0.1229,4,7
+459,PACE,0.1831,-83.0859,-0.1236,3,7
+460,MILLERSVILLE,0.1825,-83.3312,-0.1240,4,7
+461,E STROUDSBURG,0.1802,-84.1824,-0.1253,3,8
+462,CORNELL IA,0.1784,-84.8530,-0.1263,4,6
+463,ULL,0.1760,-85.7659,-0.1276,5,7
+464,URBANA,0.1751,-86.0978,-0.1281,5,6
+465,UVA-WISE,0.1743,-86.4038,-0.1286,5,6
+466,DAYTON,0.1740,-86.5136,-0.1287,5,6
+467,MOORHEAD ST,0.1718,-87.3579,-0.1300,5,6
+468,TX A&M K'VILLE,0.1715,-87.4747,-0.1302,4,7
+469,MT IDA,0.1710,-87.6675,-0.1305,4,6
+470,IDAHO,0.1696,-88.1754,-0.1312,4,8
+471,BUENA VISTA,0.1692,-88.3263,-0.1314,3,7
+472,ULM,0.1657,-89.6647,-0.1334,4,8
+473,S DAKOTA TECH,0.1657,-89.6702,-0.1334,5,6
+474,SOUTH ALABAMA,0.1647,-90.0368,-0.1340,4,8
+475,WAGNER,0.1630,-90.6929,-0.1350,4,7
+476,HARTWICK,0.1624,-90.9074,-0.1353,3,7
+477,UTICA,0.1619,-91.1089,-0.1356,3,7
+478,ENDICOTT,0.1595,-92.0171,-0.1369,3,7
+479,CHARLESTON WV,0.1578,-92.6513,-0.1379,4,6
+480,DICKINSON,0.1573,-92.8226,-0.1381,3,7
+481,GETTYSBURG,0.1556,-93.4908,-0.1391,3,7
+482,MCDANIEL COL,0.1548,-93.7808,-0.1396,3,7
+483,SF AUSTIN,0.1528,-94.5478,-0.1407,4,7
+484,W TEXAS A&M,0.1527,-94.5603,-0.1407,3,8
+485,BUCKNELL,0.1512,-95.1270,-0.1416,5,6
+486,RHODES,0.1506,-95.3586,-0.1419,4,6
+487,MASSACHUSETTS,0.1499,-95.6405,-0.1423,4,8
+488,BRIGHAM YOUNG,0.1496,-95.7623,-0.1425,4,9
+489,ST JOHN FISHER,0.1487,-96.0987,-0.1430,2,8
+490,NE WESLEYAN,0.1457,-97.2029,-0.1446,2,8
+491,BLACK HILLS ST,0.1445,-97.6560,-0.1453,4,6
+492,MARS HILL,0.1429,-98.2678,-0.1462,3,7
+493,EMORY & HENRY,0.1415,-98.8132,-0.1470,3,7
+494,JUNIATA,0.1406,-99.1650,-0.1476,3,7
+495,MISSOURI ST,0.1391,-99.7036,-0.1484,3,8
+496,NORTH DAKOTA,0.1386,-99.9001,-0.1487,3,8
+497,SACRED HEART,0.1372,-100.4132,-0.1494,4,7
+498,EAST CENTRAL OK,0.1364,-100.7220,-0.1499,2,9
+499,OK BAPTIST,0.1358,-100.9503,-0.1502,2,9
+500,ALLEGHENY,0.1343,-101.5223,-0.1511,3,7
+501,E KENTUCKY,0.1325,-102.1959,-0.1521,4,7
+502,ADAMS ST,0.1319,-102.4317,-0.1524,4,7
+503,MOREHOUSE,0.1301,-103.1154,-0.1534,4,6
+504,WALSH,0.1283,-103.7848,-0.1544,4,7
+505,GLENVILLE ST,0.1282,-103.8409,-0.1545,4,7
+506,PUGET SOUND,0.1272,-104.1968,-0.1551,3,6
+507,LAGRANGE,0.1261,-104.6172,-0.1557,4,6
+508,FITCHBURG ST,0.1253,-104.9286,-0.1561,3,7
+509,BIRMINGHAM SO,0.1240,-105.4131,-0.1569,3,7
+510,NEVADA,0.1230,-105.7851,-0.1574,3,9
+511,FDU MADISON,0.1221,-106.1458,-0.1580,3,7
+512,NEW MEXICO,0.1210,-106.5556,-0.1586,3,9
+513,TULSA,0.1206,-106.7229,-0.1588,2,10
+514,NORFOLK ST,0.1185,-107.5038,-0.1600,4,7
+515,IDAHO ST,0.1184,-107.5260,-0.1600,4,7
+516,MARIST,0.1162,-108.3734,-0.1613,4,7
+517,SEWANEE,0.1151,-108.7787,-0.1619,3,7
+518,AMERICAN INTL,0.1149,-108.8629,-0.1620,2,8
+519,GROVE CITY,0.1141,-109.1694,-0.1625,4,6
+520,MOREHEAD ST,0.1126,-109.7111,-0.1633,4,7
+521,ILLINOIS,0.1119,-109.9819,-0.1637,2,10
+522,N COLORADO,0.1105,-110.5296,-0.1645,3,7
+523,WESTFIELD ST,0.1093,-110.9604,-0.1651,3,7
+524,WEST LIBERTY,0.1080,-111.4564,-0.1659,3,8
+525,ELIZ. CITY ST,0.1073,-111.7396,-0.1663,4,6
+526,WILLIAM & MARY,0.1067,-111.9508,-0.1666,2,9
+527,BROWN,0.1059,-112.2456,-0.1670,2,8
+528,HAWAII,0.1043,-112.8476,-0.1679,3,9
+529,DEAN,0.1030,-113.3625,-0.1687,4,6
+530,BATES,0.1022,-113.6710,-0.1692,2,7
+531,BOWLING GREEN,0.1010,-114.1100,-0.1698,2,10
+532,MORAVIAN,0.1005,-114.2982,-0.1701,2,8
+533,MILLSAPS,0.0989,-114.9102,-0.1710,3,7
+534,AUSTIN COL,0.0983,-115.1163,-0.1713,3,7
+535,LAFAYETTE,0.0979,-115.2888,-0.1716,3,8
+536,KENT,0.0961,-115.9718,-0.1726,2,10
+537,NC WESLEYAN,0.0947,-116.4761,-0.1733,3,7
+538,ST LAWRENCE,0.0947,-116.5053,-0.1734,2,8
+539,JACKSON ST,0.0930,-117.1230,-0.1743,3,8
+540,LOUISIANA COL,0.0917,-117.6263,-0.1750,3,7
+541,BREVARD,0.0912,-117.8303,-0.1753,4,6
+542,ALABAMA A&M,0.0903,-118.1372,-0.1758,4,7
+543,COASTAL CAR,0.0891,-118.6159,-0.1765,3,9
+544,LEWIS & CLARK,0.0885,-118.8429,-0.1768,2,7
+545,LOCK HAVEN,0.0873,-119.2710,-0.1775,2,9
+546,COAST GUARD,0.0861,-119.7535,-0.1782,3,7
+547,GENEVA,0.0854,-120.0071,-0.1786,3,7
+548,MUSKINGUM,0.0849,-120.1884,-0.1789,2,8
+549,WILMINGTON OH,0.0837,-120.6453,-0.1795,2,8
+550,NORTH PARK,0.0829,-120.9364,-0.1800,3,7
+551,GALLAUDET,0.0817,-121.4198,-0.1807,3,7
+552,ROCHESTER NY,0.0807,-121.7825,-0.1812,2,7
+553,CONCORDIA IL,0.0795,-122.2156,-0.1819,3,6
+554,SHAW NC,0.0785,-122.6132,-0.1825,3,7
+555,WI EAU CLAIRE,0.0781,-122.7544,-0.1827,1,9
+556,S CAROLINA ST,0.0756,-123.7257,-0.1841,3,7
+557,FLORIDA A&M,0.0752,-123.8566,-0.1843,3,8
+558,SAVANNAH ST,0.0751,-123.8861,-0.1844,3,8
+559,MURRAY ST,0.0747,-124.0347,-0.1846,3,8
+560,ELMHURST,0.0736,-124.4672,-0.1852,2,8
+561,HIRAM,0.0727,-124.8174,-0.1857,2,8
+562,BRIDGEWATER MA,0.0719,-125.0934,-0.1862,2,8
+563,WI LUTHERAN,0.0711,-125.4009,-0.1866,3,7
+564,SW MINNESOTA,0.0691,-126.1663,-0.1877,2,9
+565,CONCORDIA SP,0.0691,-126.1766,-0.1878,2,9
+566,MINOT ST,0.0689,-126.2444,-0.1879,3,8
+567,GA SOUTHERN,0.0680,-126.5783,-0.1884,2,10
+568,NC PEMBROKE,0.0663,-127.2308,-0.1893,2,8
+569,SE MISSOURI ST,0.0659,-127.3535,-0.1895,3,8
+570,KENTUCKY ST,0.0651,-127.6865,-0.1900,3,8
+571,MA MARITIME,0.0643,-127.9609,-0.1904,2,8
+572,W OREGON,0.0625,-128.6731,-0.1915,3,8
+573,NON-NCAA,0.0619,-128.8657,-0.1918,14,36
+574,HAMLINE,0.0615,-129.0384,-0.1920,2,8
+575,BAYLOR,0.0607,-129.3390,-0.1925,1,11
+576,BETHANY WV,0.0600,-129.6156,-0.1929,2,8
+577,CAPITAL,0.0591,-129.9282,-0.1933,1,9
+578,BELHAVEN MS,0.0582,-130.2880,-0.1939,2,8
+579,QUINCY,0.0572,-130.6403,-0.1944,3,8
+580,PERMIAN BASIN,0.0564,-130.9454,-0.1949,2,9
+581,MCMURRY,0.0564,-130.9707,-0.1949,2,8
+582,DEFIANCE,0.0553,-131.3800,-0.1955,2,8
+583,BALL ST,0.0552,-131.4151,-0.1956,2,10
+584,S VIRGINIA,0.0535,-132.0413,-0.1965,2,8
+585,KANSAS,0.0527,-132.3493,-0.1969,1,11
+586,IOWA WESLEYAN,0.0527,-132.3541,-0.1970,2,8
+587,SAN JOSE ST,0.0514,-132.8670,-0.1977,2,11
+588,WM JEWELL,0.0503,-133.2813,-0.1983,2,9
+589,DELAWARE ST,0.0495,-133.5790,-0.1988,2,9
+590,MISSISSIPPI COL,0.0492,-133.6835,-0.1989,1,9
+591,WAYNESBURG,0.0481,-134.0951,-0.1995,2,8
+592,ROBERT MORRIS,0.0477,-134.2537,-0.1998,2,9
+593,COLBY,0.0471,-134.4846,-0.2001,1,8
+594,OREGON ST,0.0464,-134.7281,-0.2005,1,11
+595,CONCORD,0.0451,-135.2426,-0.2013,2,9
+596,JC SMITH,0.0449,-135.3154,-0.2014,2,8
+597,LAMAR,0.0442,-135.5659,-0.2017,2,9
+598,ST VINCENT,0.0434,-135.8773,-0.2022,2,8
+599,CARROLL WI,0.0431,-136.0034,-0.2024,1,9
+600,ABILENE CHR,0.0423,-136.2710,-0.2028,2,9
+601,AUGUSTANA IL,0.0421,-136.3616,-0.2029,1,9
+602,STETSON,0.0407,-136.8968,-0.2037,2,9
+603,DAVIDSON,0.0401,-137.1044,-0.2040,2,9
+604,ALD-BROADDUS,0.0400,-137.1504,-0.2041,3,8
+605,TEXAS ST,0.0393,-137.4134,-0.2045,2,10
+606,METHODIST,0.0393,-137.4293,-0.2045,2,8
+607,CONCORDIA WI,0.0386,-137.6845,-0.2049,2,8
+608,ST ANSELM,0.0381,-137.8595,-0.2051,1,9
+609,CHARLOTTE,0.0369,-138.3151,-0.2058,1,11
+610,LAKE ERIE,0.0365,-138.4967,-0.2061,2,8
+611,NE OKLAHOMA,0.0353,-138.9227,-0.2067,1,10
+612,LAWRENCE,0.0347,-139.1766,-0.2071,2,8
+613,N MICHIGAN,0.0334,-139.6393,-0.2078,1,9
+614,NICHOLS,0.0329,-139.8231,-0.2081,2,8
+615,NM HIGHLANDS,0.0325,-139.9740,-0.2083,2,9
+616,RICE,0.0317,-140.2986,-0.2088,1,11
+617,GARDNER WEBB,0.0306,-140.7026,-0.2094,1,10
+618,CHEYNEY ST,0.0301,-140.8862,-0.2097,1,10
+619,ME MARITIME,0.0293,-141.1976,-0.2101,1,8
+620,CLARION,0.0291,-141.2810,-0.2102,1,10
+621,INCARNATE WORD,0.0286,-141.4526,-0.2105,1,10
+622,BECKER,0.0281,-141.6594,-0.2108,1,9
+623,DAVENPORT,0.0270,-142.0581,-0.2114,1,10
+624,TX SOUTHERN,0.0266,-142.2177,-0.2116,2,9
+625,MS VALLEY ST,0.0263,-142.3268,-0.2118,2,9
+626,MISERICORDIA,0.0256,-142.6136,-0.2122,1,9
+627,KALAMAZOO,0.0247,-142.9268,-0.2127,1,9
+628,ARK PINE BLUFF,0.0241,-143.1836,-0.2131,2,9
+629,NORWICH,0.0237,-143.3193,-0.2133,1,9
+630,LANE,0.0232,-143.4937,-0.2135,2,8
+631,HOWARD PAYNE,0.0230,-143.5673,-0.2136,1,9
+632,MARY ND,0.0218,-144.0344,-0.2143,1,10
+633,KY WESLEYAN,0.0214,-144.1918,-0.2146,2,8
+634,APPRENTICE,0.0211,-144.3050,-0.2147,1,7
+635,CAL POLY,0.0195,-144.9160,-0.2156,1,10
+636,GRINNELL,0.0190,-145.0822,-0.2159,1,9
+637,ANNA MARIA,0.0182,-145.3937,-0.2164,1,9
+638,ROCKFORD,0.0180,-145.4526,-0.2164,1,8
+639,WESTERN ST CO,0.0176,-145.6289,-0.2167,1,10
+640,GEORGETOWN,0.0174,-145.6912,-0.2168,1,10
+641,MN MORRIS,0.0165,-146.0233,-0.2173,1,9
+642,BELOIT,0.0163,-146.1247,-0.2174,1,9
+643,TENNESSEE TECH,0.0160,-146.2404,-0.2176,1,10
+644,ANDERSON IN,0.0157,-146.3404,-0.2178,1,9
+645,BOWDOIN,0.0154,-146.4525,-0.2179,0,9
+646,THIEL,0.0148,-146.6689,-0.2183,1,9
+647,SETON HILL,0.0143,-146.8640,-0.2185,0,11
+648,HOUSTON BAP,0.0134,-147.2128,-0.2191,1,10
+649,MO SOUTHERN,0.0123,-147.6110,-0.2197,0,11
+650,MORGAN ST,0.0120,-147.7362,-0.2198,1,10
+651,ALFRED ST,0.0114,-147.9639,-0.2202,1,9
+652,SHORTER,0.0112,-148.0545,-0.2203,0,11
+653,CENTRAL ST OH,0.0109,-148.1508,-0.2205,1,9
+654,INDIANA ST,0.0107,-148.2131,-0.2206,0,11
+655,KENYON,0.0102,-148.4189,-0.2209,0,10
+656,LINCOLN MO,0.0101,-148.4630,-0.2209,1,9
+657,CARLETON MN,0.0098,-148.5786,-0.2211,0,10
+658,MALONE,0.0095,-148.6861,-0.2213,1,9
+659,WILLAMETTE,0.0093,-148.7589,-0.2214,0,9
+660,WHITTIER,0.0090,-148.8885,-0.2216,0,8
+661,GREENSBORO,0.0084,-149.0970,-0.2219,1,9
+662,WM PATERSON,0.0081,-149.2082,-0.2220,0,10
+663,VMI,0.0074,-149.4779,-0.2224,0,11
+664,UTEP,0.0071,-149.5916,-0.2226,0,12
+665,WILKES,0.0068,-149.7033,-0.2228,0,10
+666,VA-LYNCHBURG,0.0061,-149.9775,-0.2232,0,7
+667,MN CROOKSTON,0.0053,-150.2532,-0.2236,0,11
+668,CROWN MN,0.0043,-150.6509,-0.2242,0,10
+669,PORTLAND ST,0.0034,-150.9824,-0.2247,0,11
+670,LIVINGSTONE,0.0030,-151.1346,-0.2249,0,10
+671,LINCOLN PA,0.0026,-151.2971,-0.2251,0,10
+672,EARLHAM,0.0019,-151.5607,-0.2255,0,10
+673,SIMON FRASER,0.0000,-152.2714,-0.2266,0,10
