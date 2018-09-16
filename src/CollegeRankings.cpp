@@ -14,6 +14,8 @@
 using namespace std;
 
 int numTeams;
+int sumTeamsPlayed;
+double avgTeamsPlayed;
 
 void getInput(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<string>& teams, int numTeams);
 void getInput2(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<string>& teams, int numTeams);
@@ -29,11 +31,14 @@ vector<vector<double> > calcNewRatingGrid(vector<vector<double> >& games, vector
 vector<vector<double> > calcNewRatingGrid2(vector<vector<double> >& games, vector<vector<double>>& h2h);
 vector<vector<double> > calcNewRatingGrid3(vector<vector<double>>& games, vector<vector<double>>& origH2HPM, vector<vector<double> >& h2h, vector<int>& gamesPlayed);
 vector<vector<double> > calcNewRatingGrid4(vector<vector<double>>& games, vector<vector<double> >& h2h, vector<vector<double>>& h2hPM, vector<int>& teamsPlayed);
+vector<vector<double> > calcNewRatingGrid5(vector<vector<double>>& games, vector<vector<double> >& h2h, vector<vector<double>>& h2hPM, vector<int>& teamsPlayed);
 double predictH2Hsquare(vector<vector<double>>& originalH2HGames, vector<vector<double>>& prevH2H, int a, int b);
 double predictH2Hsquare2(vector<vector<double>>& originalH2HGames, vector<vector<double>>& prevH2H, vector<double>& tempRatings, vector<double>& tempAbsRatings, int a, int b);
 double predictH2Hsquare3(vector<vector<double>>& games, vector<vector<double>>& rawH2HPM, vector<vector<double>>& prevH2H, vector<double>& tempRatings, vector<
 double>& tempAbsRatings, vector<double>& ntr, vector<int>& gamesPlayed, int a, int b);
 double predictH2Hsquare4(vector<vector<double>>& games, vector<vector<double>>& prevH2H, vector<vector<double>>& h2hPM, vector<double>& tempRatings, vector<
+double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, int b);
+double predictH2Hsquare5(vector<vector<double>>& games, vector<vector<double>>& prevH2H, vector<vector<double>>& h2hPM, vector<double>& tempRatings, vector<
 double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, int b);
 void printGrid(vector<vector<double>>& grid);
 void printGrid2(vector<vector<double>>& grid, vector<string>& teams);
@@ -44,6 +49,8 @@ double rtX(double x, double denom);
 double powX(double x, double exponent);
 double pow2(double x);
 double rootGamesPlus2(double x, double games);
+int sum(vector<int>& v);
+double avg(vector<int>& v);
 vector<double> normalize(vector<double>& x);
 vector<double> normalizeRT2(vector<double>& x);
 vector<double> normalizePow(vector<double>& x, double exponent);
@@ -115,6 +122,9 @@ int main() {
 
 	getInput3(h2hPM, games, ties, gamesPlayed, teamsPlayed, teams, numTeams);
 
+	sumTeamsPlayed = sum(teamsPlayed);
+	avgTeamsPlayed = avg(teamsPlayed);
+
 	h2h.resize(numTeams);
 	h2hPredict.resize(numTeams);
 	ratings.resize(numTeams);
@@ -139,13 +149,13 @@ int main() {
 	}
 
 
-	h2hPredict = calcNewRatingGrid4(games, h2h, h2hPM, teamsPlayed);
+	h2hPredict = calcNewRatingGrid5(games, h2h, h2hPM, teamsPlayed);
 	for (int i = 0; i < (int) sqrt(numTeams) + numTeams + 100; ++i) {
-		h2hPredict = calcNewRatingGrid4(games, h2hPredict, h2hPM, teamsPlayed);
+		h2hPredict = calcNewRatingGrid5(games, h2hPredict, h2hPM, teamsPlayed);
 	}
 
 	calcFinalRatings(h2hPredict, ratings);
-	//printGrid2(h2hPredict, teams);
+	printGrid2(h2hPredict, teams);
 	printRatingsInfo(teams, ratings, games, h2hPM, ties);
 	return 0;
 }
@@ -602,6 +612,32 @@ vector<vector<double> > calcNewRatingGrid4(vector<vector<double>>& games, vector
 	return newGrid;
 }
 
+vector<vector<double> > calcNewRatingGrid5(vector<vector<double>>& games, vector<vector<double> >& h2h, vector<vector<double>>& h2hPM, vector<int>& teamsPlayed) {
+	vector<vector<double> > newGrid;
+	vector<double> tempRatings;
+	vector<double> tempAbsRatings;
+	double prediction = 0;
+	newGrid.resize(h2h.size());
+	tempRatings.resize(h2h.size());
+	tempAbsRatings.resize(h2h.size());
+	for (uint64_t i = 0; i < newGrid.size(); ++i) {
+		newGrid[i].resize(h2h[i].size());
+		for (uint64_t j = 0; j < newGrid[i].size(); ++j) {
+			tempRatings[i] += h2h[i][j];
+			tempAbsRatings[i] += abs(h2h[i][j]);
+		}
+	}
+	vector<double> ntr = normalize(tempRatings);
+	for (uint64_t i = 0; i < newGrid.size(); ++i) {
+		for (uint64_t j = 0; j < newGrid.size(); ++j) {
+			prediction = predictH2Hsquare5(games, h2h, h2hPM, tempRatings, tempAbsRatings, ntr, teamsPlayed, i, j);
+			newGrid[i][j] = prediction;
+		}
+	}
+	return newGrid;
+}
+
+
 void printRatings(vector<string>& teams, vector<double>& ratings) {
 	for (uint64_t i = 0; i < teams.size(); ++i) {
 		cout << teams[i] << "," << ratings[i] << endl;
@@ -763,7 +799,8 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	if (a == b) {
 		return 0;
 	}
-	double gameFactor = sqrt((((double) numTeams - (double) teamsPlayed[a] + 1) / ((double) numTeams + 1)));
+	double gameFactor = sqrt(((double) (sum(teamsPlayed) - avg(teamsPlayed) - teamsPlayed[a] + 1)) / ((double) (sum(teamsPlayed) - avg(teamsPlayed) + 1)));
+	//double gameFactor = sqrt((((double) numTeams - (double) teamsPlayed[a] + 1) / ((double) numTeams + 1)));
 	double importance = powX(((ntr[a] * ntr[b] * ntr[b] + 1.0) / 2.0), 2);
 	double teamPower = rt2((1) / (ntr[a] + 1));
 	//double importance = 1;
@@ -779,10 +816,38 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 		}
 		//return prevH2H[a][b];
 	}
-	double sqPrediction = 1.0 / teamPower * gameFactor * (pow2(0.5) + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
+	double sqPrediction = teamPower * gameFactor * (pow2(0.5) + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
 	double prediction = rtX(sqPrediction, 2);
 	return prediction;
 }
+
+double predictH2Hsquare5(vector<vector<double>>& games, vector<vector<double>>& prevH2H, vector<vector<double>>& h2hPM, vector<double>& tempRatings, vector<
+double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, int b) {
+	if (a == b) {
+		return 0;
+	}
+	double gameFactor = sqrt(((double) (sumTeamsPlayed - avgTeamsPlayed - teamsPlayed[a] + 1)) / ((double) (sumTeamsPlayed - avgTeamsPlayed + 1)));
+	//double gameFactor = sqrt((((double) numTeams - (double) teamsPlayed[a] + 1) / ((double) numTeams + 1)));
+	double importance = powX(((ntr[a] * ntr[b] * ntr[b] + 1.0) / 2.0), 2);
+	double teamPower = rt2((1) / (ntr[a] + 1));
+	//double importance = 1;
+	//double importance = powX(((ntr[a] * ntr[b] + games[a][b]) / (games[a][b] + 2)), 2);
+	//double importance = powX(((ntr[a] * ntr[b] + (games[a][b] + 1)) / (games[a][b] + 4)), 2);
+	if (games[a][b] != 0) {
+		double gameScore = (teamPower * importance * (h2hPM[a][b] * games[a][b] * games[a][b]) / (games[a][b] + 1));
+		if (games[a][b] > 1.5) {
+			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
+		}
+		else {
+			return rt2(gameScore);
+		}
+		//return prevH2H[a][b];
+		}
+	double sqPrediction = teamPower * gameFactor * (pow2(0.5) + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
+	double prediction = rtX(sqPrediction, 2);
+	return prediction;
+}
+
 
 double rt2(double x) {
 	return -1 * (2 * signbit(x) - 1) * pow(abs(x), 1.0 / 2.0);
@@ -810,6 +875,18 @@ double pow2(double x) {
 
 double rootGamesPlus2(double x, double games) {
 	return -1 * (2 * signbit(x) - 1) * pow(abs(x), 1.0 / (2.0 + games));
+}
+
+int sum(vector<int>& v) {
+	int total = 0;
+	for (int x : v) {
+		total += x;
+	}
+	return total;
+}
+
+double avg(vector<int>& v) {
+	return (double) sum(v) / (double) v.size();
 }
 
 vector<double> normalize(vector<double>& x) {
