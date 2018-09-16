@@ -828,7 +828,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	}
 	double gameFactor = sqrt(((double) (sumTeamsPlayed - avgTeamsPlayed - teamsPlayed[a] + 1)) / ((double) (sumTeamsPlayed - avgTeamsPlayed + 1)));
 	//double gameFactor = sqrt((((double) numTeams - (double) teamsPlayed[a] + 1) / ((double) numTeams + 1)));
-	double importance = powX(((ntr[a] * ntr[b] * ntr[b] + 1.0) / 2.0), 2);
+	double importance = powX(((ntr[a] * ntr[a] * ntr[b] * ntr[b] + 1.0) / 2.0), 4);
 	double teamPower = rt2((1) / (ntr[a] + 1));
 	//double importance = 1;
 	//double importance = powX(((ntr[a] * ntr[b] + games[a][b]) / (games[a][b] + 2)), 2);
