@@ -155,7 +155,7 @@ int main() {
 	}
 
 	calcFinalRatings(h2hPredict, ratings);
-	printGrid2(h2hPredict, teams);
+	//printGrid2(h2hPredict, teams);
 	printRatingsInfo(teams, ratings, games, h2hPM, ties);
 	return 0;
 }
