@@ -155,7 +155,7 @@ int main() {
 	}
 
 	calcFinalRatings(h2hPredict, ratings);
-	//printGrid2(h2hPredict, teams);
+	printGrid2(h2hPredict, teams);
 	printRatingsInfo(teams, ratings, games, h2hPM, ties);
 	return 0;
 }
@@ -836,7 +836,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	//double importance = powX(((ntr[a] * ntr[b] + games[a][b]) / (games[a][b] + 2)), 2);
 	//double importance = powX(((ntr[a] * ntr[b] + (games[a][b] + 1)) / (games[a][b] + 4)), 2);
 	if (games[a][b] != 0) {
-		double gameScore = (teamPower * importance * (h2hPM[a][b] * games[a][b] * games[a][b]) / (games[a][b] + 1));
+		double gameScore = (teamPower * ((pow2(0.5) + importance) / 2.0) * (h2hPM[a][b] * games[a][b] * games[a][b]) / (games[a][b] + 1));
 		if (games[a][b] > 1.5) {
 			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
 		}
@@ -845,7 +845,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 		}
 		//return prevH2H[a][b];
 		}
-	double sqPrediction = teamPower * gameFactor * (pow2(0.5) + importance) / 2.0 * (((tempRatings[a]) - (tempRatings[b])) / (2 * ((tempAbsRatings[a]) + (tempAbsRatings[b]))));
+	double sqPrediction = teamPower * gameFactor * ((pow2(0.5) + importance) / 2.0) * (((tempRatings[a]) - (tempRatings[b])) / ((tempAbsRatings[a]) + (tempAbsRatings[b])) / 2.0);
 	double prediction = rtX(sqPrediction, 2);
 	return prediction;
 }
