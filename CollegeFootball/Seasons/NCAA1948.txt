@@ -115,7 +115,7 @@ William & Mary
 Wisconsin
 Wyoming
 Yale
-FCS
+NON-DI
 _
 West Texas A&M,Northern Arizona
 Saint Louis,Dubuque

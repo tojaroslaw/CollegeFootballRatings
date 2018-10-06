@@ -107,7 +107,7 @@ Wofford
 Wyoming
 Erskine
 Brigham Young
-FCS
+NON-DI
 _
 Auburn,Marion
 Centre,Carson-Newman

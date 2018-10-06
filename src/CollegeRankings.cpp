@@ -123,7 +123,7 @@ int main() {
 			if (games[i][j] != 0) {
 				h2hPM[i][j] = h2hPM[i][j] / (games[i][j]);
 				//h2h[i][j] = rt2(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)));
-				if (games[i][j] > 1.5) {
+				if (games[i][j] > 1.0) {
 					h2h[i][j] = rtX(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)), (sqrt(games[i][j]) * abs(h2hPM[i][j]) + 1));
 				}
 				else {
@@ -558,15 +558,17 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	if (a == b) {
 		return 0;
 	}
-	double importance = sqrt((1 - abs(ntr[a] - ntr[b]) + ntr[b]) / (1 + ntr[b]));
+	double importance = sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
+
+	double oppQAdj = (rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (numTeams * teamsPlayed[a]);
 
 	double revNtrAAdj = sqrt((2.0 - ntr[a]) / 2.0);
 	double ntrAAdj = sqrt((ntr[a] + 1.0) / 2.0);
 	double nonPlayPenalty = (ntr[b] >= ntr[a] ? sqrt((ntr[b] + 1.0) / 2.0) * revNtrAAdj : sqrt((ntr[a] - ntr[b] + 1.0) / 2.0)) * ntrAAdj;
 	double competitionBonus = (h2hPM[a][b] >= 0 ? sqrt((ntr[b] + 1.0) / 2.0) * revNtrAAdj : sqrt((2.0 - ntr[b]) / 2.0)) * ntrAAdj;
 	if (games[a][b] != 0) {
-		double gameScore = (competitionBonus * importance * (h2hPM[a][b] * games[a][b] * games[a][b]) / (games[a][b] + 1));
-		if (games[a][b] > 1.5) {
+		double gameScore = (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
+		if (games[a][b] > 1.0) {
 			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
 		}
 		else {
