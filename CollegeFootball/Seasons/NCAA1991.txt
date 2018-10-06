@@ -1,0 +1,749 @@
+Air Force
+Akron
+Alabama
+Arizona
+Arizona State
+Arkansas
+Arkansas State
+Army
+Auburn
+Ball State
+Baylor
+Boston College
+Bowling Green State
+Brigham Young
+Cal State Fullerton
+California
+Central Michigan
+Cincinnati
+Clemson
+Colorado
+Colorado State
+Duke
+East Carolina
+Eastern Michigan
+Florida
+Florida State
+Fresno State
+Georgia
+Georgia Tech
+Hawaii
+Houston
+Illinois
+Indiana
+Iowa
+Iowa State
+Kansas
+Kansas State
+Kent State
+Kentucky
+Long Beach State
+Louisiana
+Louisiana Tech
+Louisville
+LSU
+Maryland
+Memphis
+Miami (FL)
+Miami (OH)
+Michigan
+Michigan State
+Minnesota
+Mississippi State
+Missouri
+Navy
+Nebraska
+Nevada-Las Vegas
+New Mexico
+New Mexico State
+North Carolina
+North Carolina State
+Northern Illinois
+Northwestern
+Notre Dame
+Ohio
+Ohio State
+Oklahoma
+Oklahoma State
+Ole Miss
+Oregon
+Oregon State
+Pacific
+Penn State
+Pitt
+Purdue
+Rice
+Rutgers
+San Diego State
+San Jose State
+SMU
+South Carolina
+Southern Mississippi
+Stanford
+Syracuse
+Temple
+Tennessee
+Texas
+Texas A&M
+Texas Christian
+Texas Tech
+Toledo
+Tulane
+Tulsa
+UCLA
+USC
+Utah
+Utah State
+UTEP
+Vanderbilt
+Virginia
+Virginia Tech
+Wake Forest
+Washington
+Washington State
+West Virginia
+Western Michigan
+Wisconsin
+Wyoming
+FCS
+_
+(7) Penn State,(8) Georgia Tech
+(1) Florida State,(19) Brigham Young
+Air Force,Weber State
+(17) Auburn,Georgia Southern
+Bowling Green State,Eastern Michigan
+%Central Michigan,Ohio
+Colorado State,Arkansas State
+Georgia,Western Carolina
+Hawaii,Wyoming
+(12) Houston,Louisiana Tech
+Illinois,East Carolina
+Louisiana-Monroe,Louisiana
+Louisville,Eastern Kentucky
+(3) Miami (FL),Arkansas
+Miami (OH),Ball State
+Mississippi,Tulane
+Mississippi State,Cal State Fullerton
+Pittsburgh,West Virginia
+Rutgers,Boston College
+Sacramento State,Pacific
+Southern Mississippi,Delta State
+Texas-El Paso,New Mexico
+Tulsa,Missouri State
+Utah,Utah State
+Virginia Tech,James Madison
+Western Michigan,Kent State
+Memphis,(16) Southern California
+(11) Tennessee,Louisville
+Air Force,Colorado State
+(20) Alabama,Temple
+Arkansas,Southern Methodist
+Ball State,Navy
+Baylor,Texas-El Paso
+California,Pacific
+Central Michigan,Louisiana
+(8) Clemson,Appalachian State
+(12) Colorado,Wyoming
+%Duke,South Carolina
+(6) Florida,San Jose State
+(1) Florida State,Tulane
+Fresno State,Northern Illinois
+Georgia,Louisiana State
+(15) Iowa,Hawaii
+Iowa State,Eastern Illinois
+Kansas,Toledo
+Kansas State,Indiana State
+Kentucky,Miami (OH)
+Maryland,Virginia
+(2) Michigan,Boston College
+Mississippi,Memphis
+Mississippi State,(13) Texas
+(14) Nebraska,Utah State
+Nevada,Nevada-Las Vegas
+North Carolina State,Virginia Tech
+Northwestern State,Arkansas State
+(7) Notre Dame,Indiana
+(22) Ohio State,Arizona
+Oregon,Washington State
+(5) Penn State,Cincinnati
+Pittsburgh,Southern Mississippi
+Purdue,Eastern Michigan
+(24) Syracuse,Vanderbilt
+Texas Christian,New Mexico
+Texas Tech,Cal State Fullerton
+Tulsa,Oklahoma State
+(23) UCLA,(25) Brigham Young
+Utah,Oregon State
+(4) Washington,Stanford
+West Virginia,Bowling Green State
+Western Michigan,Akron
+San Diego State,Long Beach State
+(2) Miami (FL),(10) Houston
+Air Force,Utah
+Arizona,Stanford
+Arizona State,Oklahoma State
+Army,Colgate
+(15) Auburn,Mississippi
+(23) Baylor,(12) Colorado
+Boise State,Long Beach State
+California,Purdue
+Central Michigan,(18) Michigan State
+Duke,Rutgers
+East Carolina,Memphis
+(6) Florida,(16) Alabama
+(1) Florida State,Western Michigan
+Fresno State,Washington State
+(17) Georgia Tech,Boston College
+Hawaii,New Mexico
+Illinois State,Akron
+(14) Iowa,Iowa State
+Kansas,Tulsa
+Kansas State,Idaho State
+Louisiana Tech,Montana
+Miami (OH),Eastern Michigan
+(3) Michigan,(7) Notre Dame
+Minnesota,San Jose State
+(25) Mississippi State,Tulane
+Missouri,Illinois
+(13) Nebraska,Colorado State
+Nevada-Las Vegas,Oregon State
+North Carolina,Cincinnati
+North Carolina State,Kent State
+Northern Illinois,Arkansas State
+Ohio,Tennessee Tech
+(19) Ohio State,Louisville
+(9) Oklahoma,North Texas
+Oregon,Texas Tech
+(24) Pittsburgh,Temple
+Rice,Northwestern
+San Diego State,Pacific
+Southern California,(5) Penn State
+(22) Syracuse,Maryland
+(11) Tennessee,(21) UCLA
+(20) Texas A&M,Louisiana State
+Texas Christian,Ball State
+Texas-El Paso,New Mexico State
+Vanderbilt,Southern Methodist
+Virginia,Navy
+Wake Forest,Western Carolina
+West Virginia,South Carolina
+Wisconsin,Western Illinois
+Wyoming,Louisiana
+(17) Georgia Tech,Virginia
+Air Force,San Diego State
+Alabama,(25) Georgia
+Arizona State,(22) Southern California
+Arkansas,Louisiana
+(13) Auburn,Texas
+Ball State,Kent State
+(14) Baylor,Missouri
+Bowling Green State,Cincinnati
+Cal State Fullerton,Cal State Northridge
+(24) California,Arizona
+Central Michigan,Akron
+(8) Clemson,Temple
+(19) Colorado,Minnesota
+Duke,Colgate
+East Carolina,Central Florida
+Fresno State,Oregon State
+Hawaii,Pacific
+Illinois,(21) Houston
+Indiana,Kentucky
+Kansas,New Mexico State
+Kansas State,Northern Illinois
+Louisiana State,Vanderbilt
+Louisiana Tech,Eastern Michigan
+Memphis,Arkansas State
+Mississippi,Ohio
+Nevada-Las Vegas,New Mexico
+North Carolina,Army
+North Carolina State,Wake Forest
+(11) Notre Dame,Michigan State
+(16) Ohio State,Washington State
+(7) Oklahoma,Utah State
+(12) Penn State,Brigham Young
+Rice,Tulane
+Rutgers,Northwestern
+San Jose State,Long Beach State
+South Carolina,Virginia Tech
+Southern Mississippi,Colorado State
+(18) Syracuse,(5) Florida
+(6) Tennessee,(23) Mississippi State
+Texas Christian,Oklahoma State
+Texas-El Paso,Northwestern State
+Toledo,Western Michigan
+Tulsa,(15) Texas A&M
+Utah,Oregon
+(4) Washington,(9) Nebraska
+West Virginia,Maryland
+William & Mary,Navy
+Wisconsin,Iowa State
+Wyoming,Texas Tech
+UCLA,San Diego State
+Akron,Northern Arizona
+(22) Alabama,Vanderbilt
+Arizona,Long Beach State
+Army,Harvard
+Ball State,Indiana State
+(12) Baylor,Southern Methodist
+Bowling Green State,Navy
+Brigham Young,Air Force
+%Central Michigan,Toledo
+(7) Clemson,(19) Georgia Tech
+Colorado State,Hawaii
+East Carolina,South Carolina
+(14) Florida,(21) Mississippi State
+(1) Florida State,(3) Michigan
+Georgia,Cal State Fullerton
+%Indiana,Missouri
+(9) Iowa,Northern Illinois
+Iowa State,Rice
+Kentucky,Kent State
+Louisiana Tech,Arkansas State
+Louisville,Southern Mississippi
+(2) Miami (FL),Tulsa
+Miami (OH),Cincinnati
+Mississippi,Arkansas
+(16) Nebraska,(24) Arizona State
+New Mexico,New Mexico State
+North Carolina State,(23) North Carolina
+Northwestern,Wake Forest
+(8) Notre Dame,Purdue
+(6) Oklahoma,Virginia Tech
+(10) Penn State,Boston College
+(18) Pittsburgh,Minnesota
+Rutgers,Michigan State
+San Jose State,Utah State
+Southern California,Oregon
+Stanford,(17) Colorado
+(10) Syracuse,Tulane
+Temple,Howard
+(5) Tennessee,(13) Auburn
+Texas A&M,Louisiana
+Texas Christian,Texas Tech
+%Texas-El Paso,Wyoming
+Virginia,Duke
+(4) Washington,Kansas State
+Washington State,Nevada-Las Vegas
+Western Michigan,Ohio
+Wisconsin,Eastern Michigan
+Brigham Young,Utah State
+Air Force,Wyoming
+(20) Alabama,Chattanooga
+Appalachian State,Wake Forest
+Arizona State,Utah
+Arkansas,Texas Christian
+(11) Baylor,Houston
+Bowling Green State,Central Michigan
+(18) California,(24) UCLA
+Central Florida,Arkansas State
+Cincinnati,Louisville
+Colorado State,Texas-El Paso
+Duke,Vanderbilt
+East Carolina,Akron
+Eastern Michigan,Kent State
+(13) Florida,Louisiana State
+(1) Florida State,(10) Syracuse
+Fresno State,New Mexico
+Georgia,(6) Clemson
+(22) Illinois,Minnesota
+Indiana,Michigan State
+Long Beach State,Nevada-Las Vegas
+Louisiana Tech,Northern Illinois
+(2) Miami (FL),Oklahoma State
+Miami (OH),Louisiana
+(7) Michigan,(9) Iowa
+Mississippi,Kentucky
+Missouri,Memphis
+North Carolina,William & Mary
+(19) North Carolina State,(21) Georgia Tech
+(8) Notre Dame,Stanford
+(14) Ohio State,Wisconsin
+(5) Oklahoma,Iowa State
+Oregon,New Mexico State
+Pacific,Cal State Fullerton
+(12) Penn State,Temple
+(17) Pittsburgh,Maryland
+Purdue,Northwestern
+Rutgers,Army
+San Diego State,Hawaii
+South Carolina,East Tennessee State
+Southern Methodist,Tulane
+Southern Mississippi,(16) Auburn
+Texas,Rice
+(23) Texas A&M,Texas Tech
+Toledo,Ohio
+Virginia,Kansas
+Virginia Tech,West Virginia
+(3) Washington,Arizona
+Washington State,Oregon State
+Western Michigan,Ball State
+Air Force,Navy
+Akron,Youngstown State
+(19) Alabama,Tulane
+Arizona State,Oregon State
+Arkansas,Houston
+(24) Auburn,Vanderbilt
+Ball State,Eastern Michigan
+Boston College,Louisville
+Bowling Green State,Ohio
+Brigham Young,Texas-El Paso
+(13) California,Oregon
+Cincinnati,Kent State
+Citadel,Army
+(25) Colorado,Missouri
+East Carolina,(15) Syracuse
+(10) Florida,(4) Tennessee
+(1) Florida State,Virginia Tech
+Fresno State,Long Beach State
+(22) Georgia,(23) Mississippi
+Georgia Tech,Maryland
+(20) Illinois,(11) Ohio State
+Indiana,Northwestern
+(17) Iowa,Wisconsin
+Kansas State,Kansas
+Louisiana State,Arkansas State
+%Louisiana Tech,South Carolina
+Memphis,Southern Mississippi
+(2) Miami (FL),(9) Penn State
+%Miami (OH),Central Michigan
+(5) Michigan,Michigan State
+Minnesota,Purdue
+Mississippi State,Kentucky
+(14) Nebraska,Oklahoma State
+Nevada-Las Vegas,Cal State Fullerton
+North Carolina,Wake Forest
+(7) Notre Dame,(12) Pittsburgh
+Pacific,Cal Poly
+Rice,(8) Baylor
+Rutgers,Maine
+San Diego State,New Mexico
+San Jose State,New Mexico State
+Southern California,Washington State
+Stanford,Cornell
+Texas,(6) Oklahoma
+Texas Tech,Southern Methodist
+Tulsa,Louisiana
+UCLA,Arizona
+Utah,Wyoming
+%Virginia,(18) Clemson
+(3) Washington,Toledo
+West Virginia,Temple
+Western Michigan,Northern Illinois
+Akron,Arkansas State
+(14) Alabama,(8) Tennessee
+Arkansas,Texas
+Army,Louisville
+Bowling Green State,Toledo
+Brigham Young,Hawaii
+Central Michigan,Kent State
+(22) Colorado,(12) Oklahoma
+Eastern Michigan,Western Michigan
+(6) Florida,Northern Illinois
+(1) Florida State,Middle Tennessee State
+Fresno State,New Mexico State
+Houston,Southern Methodist
+(15) Iowa,(13) Illinois
+Kansas,Iowa State
+Louisiana State,Kentucky
+Maryland,Wake Forest
+Memphis,Mississippi State
+(2) Miami (FL),Long Beach State
+Miami (OH),Ohio
+(4) Michigan,Indiana
+Michigan State,Minnesota
+Missouri,Oklahoma State
+(9) Nebraska,Kansas State
+(11) North Carolina State,Marshall
+(5) Notre Dame,Air Force
+(18) Ohio State,Northwestern
+(10) Penn State,Rutgers
+Purdue,Wisconsin
+San Diego State,Texas-El Paso
+San Jose State,Pacific
+South Carolina,Georgia Tech
+Southern Mississippi,Tulane
+Stanford,Southern California
+(24) Syracuse,(20) Pittsburgh
+Temple,Navy
+(19) Texas A&M,(16) Baylor
+Texas Christian,Rice
+UCLA,Oregon State
+Utah,Colorado State
+Utah State,Cal State Fullerton
+Vanderbilt,(17) Georgia
+Virginia,North Carolina
+Virginia Tech,Cincinnati
+(3) Washington,(7) California
+Washington State,(25) Arizona State
+West Virginia,Boston College
+Wyoming,New Mexico
+(4) Michigan,Minnesota
+Air Force,Texas-El Paso
+Akron,Northern Illinois
+(22) Baylor,Texas Christian
+Boston College,Army
+Bowling Green State,Western Michigan
+Brigham Young,New Mexico
+(10) California,San Jose State
+Central Michigan,Ball State
+Cincinnati,Southern Mississippi
+(19) Clemson,(12) North Carolina State
+(16) Colorado,Kansas State
+Delaware,Navy
+Duke,Maryland
+(20) East Carolina,(23) Pittsburgh
+(1) Florida State,Louisiana State
+Fresno State,Nevada-Las Vegas
+(24) Georgia,Kentucky
+Georgia Tech,North Carolina
+Indiana,Wisconsin
+(11) Iowa,Purdue
+Long Beach State,Utah State
+%Louisiana Tech,Louisiana
+(2) Miami (FL),Arizona
+Mississippi State,Auburn
+Missouri State,Arkansas State
+(9) Nebraska,Missouri
+Northwestern,(17) Illinois
+(5) Notre Dame,Southern California
+Ohio,Kent State
+(14) Ohio State,Michigan State
+(21) Oklahoma,Kansas
+%Oklahoma State,Iowa State
+Pacific,New Mexico State
+(8) Penn State,West Virginia
+San Diego State,Utah
+Stanford,Oregon State
+(18) Syracuse,Rutgers
+Texas,Southern Methodist
+(13) Texas A&M,Houston
+Texas Tech,Rice
+Toledo,Miami (OH)
+Tulsa,Memphis
+UCLA,Arizona State
+Vanderbilt,Mississippi
+Virginia,Wake Forest
+Virginia Tech,Louisville
+(3) Washington,Oregon
+Wyoming,Colorado State
+Brigham Young,Colorado State
+(7) Alabama,Mississippi State
+Arizona,Oregon State
+Ball State,Ohio
+(21) Baylor,(24) Arkansas
+Boston College,Pittsburgh
+Bowling Green State,Miami (OH)
+(10) California,Southern California
+%Central Michigan,Eastern Michigan
+(16) Clemson,Wake Forest
+(17) East Carolina,Tulane
+(6) Florida,Auburn
+(1) Florida State,Louisville
+Georgia Tech,Duke
+Hawaii,Utah
+Illinois,Wisconsin
+Indiana,Minnesota
+(11) Iowa,(13) Ohio State
+Iowa State,Missouri
+Kansas,Oklahoma State
+Kent State,Toledo
+Kentucky,Cincinnati
+Louisiana,Northern Illinois
+Louisiana State,Mississippi
+Louisiana Tech,Louisiana-Monroe
+(4) Michigan,Purdue
+%(9) Nebraska,(15) Colorado
+New Mexico,Air Force
+New Mexico State,Cal State Fullerton
+North Carolina,Maryland
+(19) North Carolina State,South Carolina
+Northwestern,Michigan State
+(5) Notre Dame,Navy
+(20) Oklahoma,Kansas State
+Pacific,Long Beach State
+San Diego State,Wyoming
+San Jose State,Nevada-Las Vegas
+Stanford,Oregon
+(18) Syracuse,Temple
+(14) Tennessee,Memphis
+Texas,Texas Tech
+(12) Texas A&M,Rice
+Texas Christian,Southern Methodist
+Tulsa,Southern Mississippi
+(23) UCLA,Washington State
+Utah State,(25) Fresno State
+Vanderbilt,Army
+Virginia,Virginia Military Institute
+(3) Washington,Arizona State
+West Virginia,Rutgers
+Air Force,Army
+(8) Alabama,Louisiana State
+Arizona State,Oregon
+Arkansas State,Troy
+Auburn,Louisiana
+Ball State,Toledo
+Boston College,Temple
+Bowling Green State,Kent State
+Brigham Young,Wyoming
+(7) California,Oregon State
+Cincinnati,Middle Tennessee State
+(15) Clemson,North Carolina
+(14) Colorado,Oklahoma State
+(16) East Carolina,Southern Mississippi
+Eastern Michigan,Ohio
+(6) Florida,(23) Georgia
+(1) Florida State,South Carolina
+Fresno State,Pacific
+Georgia Tech,Furman
+Houston,Texas
+Illinois,Purdue
+(10) Iowa,(25) Indiana
+Kansas State,Iowa State
+Louisiana Tech,Southern Illinois
+Memphis,Louisville
+(2) Miami (FL),West Virginia
+(4) Michigan,Northwestern
+Michigan State,Wisconsin
+(11) Nebraska,Kansas
+New Mexico State,Long Beach State
+(19) Ohio State,Minnesota
+(20) Oklahoma,Missouri
+(9) Penn State,Maryland
+Pittsburgh,Rutgers
+Rice,Southern Methodist
+San Diego State,Colorado State
+San Jose State,Cal State Fullerton
+Stanford,(22) UCLA
+(13) Tennessee,(5) Notre Dame
+(12) Texas A&M,Texas Christian
+Texas Tech,Arkansas
+Texas-El Paso,Hawaii
+Tulane,Navy
+Utah,New Mexico
+Utah State,Nevada-Las Vegas
+Vanderbilt,Kentucky
+(24) Virginia,(18) North Carolina State
+Virginia Tech,Akron
+Wake Forest,Duke
+(2) Washington,Southern California
+Washington State,Arizona
+Western Michigan,Miami (OH)
+(7) Alabama,Memphis
+Arizona,Southern California
+Army,Akron
+Bowling Green State,Ball State
+%(23) Brigham Young,San Diego State
+(6) California,Arizona State
+Central Michigan,Western Michigan
+(15) Clemson,Maryland
+(16) Colorado,Kansas
+(14) East Carolina,Virginia Tech
+(5) Florida,Kentucky
+Fresno State,Cal State Fullerton
+Georgia,Auburn
+Georgia Tech,Wake Forest
+%Hawaii,San Jose State
+Houston,Rice
+(9) Iowa,Northwestern
+Kansas State,Missouri
+Louisiana,Arkansas State
+Louisiana Tech,Southern Mississippi
+(2) Miami (FL),(1) Florida State
+Miami (OH),Kent State
+(4) Michigan,(25) Illinois
+Mississippi State,Louisiana State
+(11) Nebraska,Iowa State
+Nevada-Las Vegas,New Mexico State
+New Mexico,Colorado State
+North Carolina,South Carolina
+(24) North Carolina State,Duke
+Northern Illinois,Illinois State
+(19) Ohio State,Indiana
+(18) Oklahoma,Oklahoma State
+(8) Penn State,(12) Notre Dame
+Purdue,Michigan State
+Rutgers,Temple
+(22) Stanford,Washington State
+(17) Syracuse,Boston College
+(10) Tennessee,Mississippi
+Texas,Texas Christian
+(13) Texas A&M,Arkansas
+Texas Tech,(20) Baylor
+Toledo,Eastern Michigan
+Tulsa,Louisville
+UCLA,Oregon
+Utah,Texas-El Paso
+Utah State,Pacific
+(3) Washington,Oregon State
+Wisconsin,Minnesota
+Air Force,Hawaii
+Akron,Temple
+Arizona State,Arizona
+Arkansas,Rice
+Baylor,Texas
+Brigham Young,Utah
+Cal State Fullerton,Long Beach State
+(14) Clemson,South Carolina
+(15) Colorado,Iowa State
+(13) East Carolina,Cincinnati
+Fresno State,San Jose State
+Indiana,Purdue
+(9) Iowa,Minnesota
+Kansas,Missouri
+Kansas State,Oklahoma State
+Louisiana State,Tulane
+Louisiana Tech,Texas-El Paso
+(1) Miami (FL),Boston College
+(4) Michigan,(18) Ohio State
+Michigan State,Illinois
+Mississippi State,Mississippi
+North Carolina,Duke
+(22) North Carolina State,Maryland
+Oregon State,Oregon
+Pacific,Nevada-Las Vegas
+(21) Stanford,(6) California
+(16) Syracuse,West Virginia
+(10) Tennessee,Kentucky
+(12) Texas A&M,Southern Methodist
+Texas Christian,Houston
+Toledo,Northern Illinois
+(23) Tulsa,Ohio
+(25) UCLA,Southern California
+Utah State,New Mexico State
+(20) Virginia,Virginia Tech
+Wake Forest,Navy
+(2) Washington,Washington State
+Wisconsin,Northwestern
+(6) Penn State,Pittsburgh
+(10) Texas A&M,Texas
+(11) Nebraska,(19) Oklahoma
+(8) Alabama,Auburn
+(13) Clemson,Duke
+(5) Florida,(3) Florida State
+(25) Georgia,Georgia Tech
+(1) Miami (FL),San Diego State
+(18) Notre Dame,Hawaii
+(9) Tennessee,Vanderbilt
+Texas Tech,Houston
+(22) Tulsa,Southern Methodist
+Navy,Army
+Bowling Green State,Fresno State
+Georgia Tech,(17) Stanford
+(8) Alabama,(15) Colorado
+Air Force,Mississippi State
+(24) Georgia,Arkansas
+(20) Oklahoma,(19) Virginia
+%(7) Iowa,Brigham Young
+(23) Tulsa,San Diego State
+Indiana,Baylor
+(22) UCLA,Illinois
+(14) California,(13) Clemson
+(12) East Carolina,(21) North Carolina State
+(5) Florida State,(9) Texas A&M
+(1) Miami (FL),(11) Nebraska
+(18) Notre Dame,(3) Florida
+(6) Penn State,(10) Tennessee
+(16) Syracuse,(25) Ohio State
+(2) Washington,(4) Michigan
+=
