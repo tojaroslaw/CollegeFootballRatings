@@ -189,14 +189,20 @@ string toUpper(string& x) {
 	}
 	x = x.substr(cutBegin, cutEnd);
 
+	if (x == "LOUISIANA" || x == "LOUISIANA-LAFAYETTE" || x == "LOUISIANA LAFAYETTE" || x == "ULL") {
+		return "LOUISIANA-LAFAYETTE";
+	}
+	if (x == "LOUISIANA-MONROE" || x == "LOUISIANA MONROE" || x == "ULM") {
+		return "LOUISIANA-MONROE";
+	}
 	if (x == "CENTRAL FLORIDA") {
 		return "UCF";
 	}
-	if (x == "MIAMI (FL)" || x == "MIAMI-FL" || x == "MIAMI") {
-		return "MIAMI FL";
+	if (x == "MIAMI (FL)" || x == "MIAMI-FL" || x == "MIAMI" || x == "MIAMI FL") {
+		return "MIAMI-FL";
 	}
-	if (x == "MIAMI (OH)" || x == "MIAMI-OH") {
-		return "MIAMI OH";
+	if (x == "MIAMI (OH)" || x == "MIAMI-OH" || x == "MIAMI OH") {
+		return "MIAMI-OH";
 	}
 	if (x == "BOWLING GREEN STATE") {
 		return "BOWLING GREEN";
@@ -270,8 +276,8 @@ string toUpper(string& x) {
 	if (x == "WVU") {
 		return "WEST VIRGINIA";
 	}
-	if (x == "ALBANY (NY)" || x == "ALBANY") {
-		return "ALBANY NY";
+	if (x == "ALBANY (NY)" || x == "ALBANY" || x == "ALBANY NY") {
+		return "ALBANY-NY";
 	}
 	if (x == "LOYOLA (IL)" || x == "LOYOLA IL" || x == "LOYOLA CHICAGO" || x == "LOYOLA-CHICAGO" || x == "LOY CHICAGO" || x == "LOY-CHICAGO") {
 		return "LOYOLA-IL";
@@ -279,17 +285,17 @@ string toUpper(string& x) {
 	if (x == "LOYOLA (MD)" || x == "LOYOLA MD") {
 		return "LOYOLA-MD";
 	}
-	if (x == "ST. FRANCIS (NY)" || x == "ST. FRANCIS") {
-		return "ST. FRANCIS NY";
+	if (x == "ST. FRANCIS (NY)" || x == "ST. FRANCIS" || x == "ST. FRANCIS NY") {
+		return "ST. FRANCIS-NY";
 	}
-	if (x == "SAINT FRANCIS (PA)" || x == "SAINT FRANCIS") {
-		return "SAINT FRANCIS PA";
+	if (x == "SAINT FRANCIS (PA)" || x == "SAINT FRANCIS" || x == "ST. FRANCIS PA" || x == "SAINT FRANCIS PA") {
+		return "SAINT FRANCIS-PA";
 	}
-	if (x == "SAINT MARY'S (CA)" || x == "SAINT MARY'S") {
-		return "SAINT MARY'S CA";
+	if (x == "SAINT MARY'S (CA)" || x == "SAINT MARY'S" || x == "SAINT MARY'S CA") {
+		return "SAINT MARY'S-CA";
 	}
-	if (x == "ST. JOHN'S (NY)" || x == "ST. JOHN'S") {
-		return "ST. JOHN'S NY";
+	if (x == "ST. JOHN'S (NY)" || x == "ST. JOHN'S" || x == "ST. JOHN'S NY") {
+		return "ST. JOHN'S-NY";
 	}
 	return x;
 }
@@ -558,16 +564,25 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	if (a == b) {
 		return 0;
 	}
-	double importance = sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
+	double importance = sqrt((ntr[a] * ntr[b] + 1.0) / 2.0); //sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
 
-	double oppQAdj = (rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (numTeams * teamsPlayed[a]);
+	double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
+	double revNtrAAdj = 1.5 - ntrAAdj;
 
-	double revNtrAAdj = sqrt((2.0 - ntr[a]) / 2.0);
-	double ntrAAdj = sqrt((ntr[a] + 1.0) / 2.0);
-	double nonPlayPenalty = (ntr[b] >= ntr[a] ? sqrt((ntr[b] + 1.0) / 2.0) * revNtrAAdj : sqrt((ntr[a] - ntr[b] + 1.0) / 2.0)) * ntrAAdj;
-	double competitionBonus = (h2hPM[a][b] >= 0 ? sqrt((ntr[b] + 1.0) / 2.0) * revNtrAAdj : sqrt((2.0 - ntr[b]) / 2.0)) * ntrAAdj;
+	double ntrBAdj = rt2(ntr[b] * 2.0 - 1.0) / 4.0 + 0.75;
+	double revNtrBAdj = 1.5 - ntrBAdj;
+
+	double oppQAdj = ntrBAdj / (sqrt(numTeams) * teamsPlayed[a]); //(rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (sqrt(numTeams) * teamsPlayed[a]);
+	double negOppQAdj = -1 * ntrBAdj * teamsPlayed[a] / (sqrt(numTeams) * pow2(avgTeamsPlayed)); //-1 * sqrt(ntr[b] / 2.0) * teamsPlayed[a] / (sqrt(numTeams) * avgTeamsPlayed);
+
+	double nonPlayAdj = sqrt(sqrt(0.5)); //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
+	double playAdj = 1; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
+
+	double nonPlayPenalty = (ntr[a] >= ntr[b] ? sqrt((ntr[a] - ntr[b]) / 2.0) : ntrBAdj) * revNtrAAdj;
+	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj) * ntrAAdj;
+
 	if (games[a][b] != 0) {
-		double gameScore = (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
+		double gameScore = playAdj * (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
 		if (games[a][b] > 1.0) {
 			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
 		}
@@ -575,8 +590,8 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 			return rt2(gameScore);
 		}
 	}
-	double sqPrediction = nonPlayPenalty * importance * ((((tempRatings[a]) - (tempRatings[b])) / ((tempAbsRatings[a]) + (tempAbsRatings[b]))) / 2.0);
-	double prediction = rtX(sqPrediction, 2);
+	double sqPrediction = nonPlayAdj * nonPlayPenalty * importance * ((((tempRatings[a]) - (tempRatings[b])) / ((tempAbsRatings[a]) + (tempAbsRatings[b]))) / 2.0) + negOppQAdj;
+	double prediction = rt2(sqPrediction);
 	return prediction;
 }
 
