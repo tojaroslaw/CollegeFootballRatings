@@ -204,7 +204,7 @@ string toUpper(string& x) {
 	if (x == "MIAMI (OH)" || x == "MIAMI-OH" || x == "MIAMI OH") {
 		return "MIAMI-OH";
 	}
-	if (x == "BOWLING GREEN STATE") {
+	if (x == "BOWLING GREEN STATE" || x == "BGSU") {
 		return "BOWLING GREEN";
 	}
 	if (x == "TROY STATE") {
@@ -216,7 +216,7 @@ string toUpper(string& x) {
 	if (x == "BYU") {
 		return "BRIGHAM YOUNG";
 	}
-	if (x == "CAL") {
+	if (x == "CAL" || x == "UC BERKELEY") {
 		return "CALIFORNIA";
 	}
 	if (x == "LOUISIANA STATE") {
@@ -225,7 +225,7 @@ string toUpper(string& x) {
 	if (x == "MISSISSIPPI") {
 		return "OLE MISS";
 	}
-	if (x == "NEVADA-LAS VEGAS") {
+	if (x == "NEVADA-LAS VEGAS" || x == "NEVADA LAS VEGAS") {
 		return "UNLV";
 	}
 	if (x == "UNC") {
@@ -240,7 +240,7 @@ string toUpper(string& x) {
 	if (x == "NIU") {
 		return "NORTHERN ILLINOIS";
 	}
-	if (x == "PENNSYLVANIA STATE" || x == "PENN ST") {
+	if (x == "PENNSYLVANIA STATE" || x == "PENN ST" || x == "PSU") {
 		return "PENN STATE";
 	}
 	if (x == "PITTSBURGH") {
@@ -564,7 +564,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	if (a == b) {
 		return 0;
 	}
-	double importance = sqrt((ntr[a] * ntr[b] + 1.0) / 2.0); //sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
+	double importance = pow2((ntr[a] * ntr[b] + (1.0 - abs(ntr[a] - ntr[b]))) - 1.0) / 2.0 + 0.5; //sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
 
 	double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
 	double revNtrAAdj = 1.5 - ntrAAdj;
@@ -573,13 +573,13 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	double revNtrBAdj = 1.5 - ntrBAdj;
 
 	double oppQAdj = ntrBAdj / (sqrt(numTeams) * teamsPlayed[a]); //(rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (sqrt(numTeams) * teamsPlayed[a]);
-	double negOppQAdj = -1 * ntrBAdj * teamsPlayed[a] / (sqrt(numTeams) * pow2(avgTeamsPlayed)); //-1 * sqrt(ntr[b] / 2.0) * teamsPlayed[a] / (sqrt(numTeams) * avgTeamsPlayed);
+	double negOppQAdj = -1 * ntrBAdj / (sqrt(numTeams) * (numTeams - teamsPlayed[a])); //-1 * sqrt(ntr[b] / 2.0) * teamsPlayed[a] / (sqrt(numTeams) * avgTeamsPlayed);
 
 	double nonPlayAdj = sqrt(sqrt(0.5)); //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
-	double playAdj = 1; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
+	double playAdj = 1.0; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
 
-	double nonPlayPenalty = (ntr[a] >= ntr[b] ? sqrt((ntr[a] - ntr[b]) / 2.0) : ntrBAdj) * revNtrAAdj;
-	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj) * ntrAAdj;
+	double nonPlayPenalty = (ntr[a] >= ntr[b] ? revNtrBAdj : ntrBAdj); //THESE ARE STILL BROKEN!
+	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj);
 
 	if (games[a][b] != 0) {
 		double gameScore = playAdj * (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
