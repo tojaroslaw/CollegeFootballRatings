@@ -575,11 +575,11 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	double oppQAdj = ntrBAdj / (sqrt(numTeams) * teamsPlayed[a]); //(rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (sqrt(numTeams) * teamsPlayed[a]);
 	double negOppQAdj = -1 * ntrBAdj / (sqrt(numTeams) * (numTeams - teamsPlayed[a])); //-1 * sqrt(ntr[b] / 2.0) * teamsPlayed[a] / (sqrt(numTeams) * avgTeamsPlayed);
 
-	double nonPlayAdj = sqrt(sqrt(0.5)); //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
+	double nonPlayAdj = 1.0; //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
 	double playAdj = 1.0; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
 
-	double nonPlayPenalty = (ntr[a] >= ntr[b] ? revNtrBAdj : ntrBAdj); //THESE ARE STILL BROKEN!
-	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj);
+	double nonPlayPenalty = sqrt(ntr[a] >= ntr[b] ? revNtrBAdj - 0.5 : ntrBAdj - 0.5); //THESE ARE STILL BROKEN!
+	double competitionBonus = sqrt(h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj);
 
 	if (games[a][b] != 0) {
 		double gameScore = playAdj * (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
