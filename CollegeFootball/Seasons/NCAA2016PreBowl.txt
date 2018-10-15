@@ -960,7 +960,5 @@ Temple,(20) Navy
 (14) West Virginia,Baylor
 Western Kentucky,Louisiana Tech
 Army,Navy
-Michigan,Fresno State
-//0.9361,32.5157
-//0.0989,-44.7121
+//USC,Rice
 =

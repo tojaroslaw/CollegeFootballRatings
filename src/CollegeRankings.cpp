@@ -17,6 +17,8 @@ int numTeams;
 int sumTeamsPlayed;
 double avgTeamsPlayed;
 
+const static double PI = 3.14159265358979323846;
+
 void getInput3(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
 string>& teams, int& numTeams);
 int findTeam(vector<string>& teams, string& team);
@@ -29,10 +31,22 @@ vector<vector<double> > calcNewRatingGrid5(vector<vector<double>>& games, vector
 double predictH2Hsquare5(vector<vector<double>>& games, vector<vector<double>>& prevH2H, vector<vector<double>>& h2hPM, vector<double>& tempRatings, vector<
 double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, int b);
 void printGrid2(vector<vector<double>>& grid, vector<string>& teams);
+
 double rt2(double x);
 double rtX(double x, double denom);
 double powX(double x, double exponent);
 double pow2(double x);
+double logyX(double x, double base);
+double logyT(double x);
+double expyX(double x, double base);
+double expyT(double x);
+double sinX(double x);
+double asinX(double x);
+double circX(double x);
+double circX(double x, double power);
+double acircX(double x);
+double acircX(double x, double power);
+
 double rootGamesPlus2(double x, double games);
 int sum(vector<int>& v);
 double avg(vector<int>& v);
@@ -189,11 +203,17 @@ string toUpper(string& x) {
 	}
 	x = x.substr(cutBegin, cutEnd);
 
-	if (x == "LOUISIANA" || x == "LOUISIANA-LAFAYETTE" || x == "LOUISIANA LAFAYETTE" || x == "ULL") {
+	if (x == "CALIFORNIA-LOS ANGELES" || x == "CALIFORNIA LOS ANGELES" || x == "UC-LOS ANGELES" || x == "CALIFORNIA-LA") {
+		return "UCLA";
+	}
+	if (x == "LOUISIANA" || x == "LOUISIANA-LAFAYETTE" || x == "LOUISIANA LAFAYETTE" || x == "ULL" || x == "UL-L" || x == "UL-LAFAYETTE") {
 		return "LOUISIANA-LAFAYETTE";
 	}
-	if (x == "LOUISIANA-MONROE" || x == "LOUISIANA MONROE" || x == "ULM") {
+	if (x == "LOUISIANA-MONROE" || x == "LOUISIANA MONROE" || x == "ULM" || x == "UL-M" || x == "UL-MONROE") {
 		return "LOUISIANA-MONROE";
+	}
+	if (x == "BRIGHAM YOUNG") {
+		return "BYU";
 	}
 	if (x == "CENTRAL FLORIDA") {
 		return "UCF";
@@ -468,7 +488,6 @@ vector<vector<double> > calcNewRatingGrid5(vector<vector<double>>& games, vector
 	return newGrid;
 }
 
-
 void printRatings(vector<string>& teams, vector<double>& ratings) {
 	for (uint64_t i = 0; i < teams.size(); ++i) {
 		cout << teams[i] << "," << ratings[i] << endl;
@@ -566,10 +585,10 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	}
 	double importance = pow2((ntr[a] * ntr[b] + (1.0 - abs(ntr[a] - ntr[b]))) - 1.0) / 2.0 + 0.5; //sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
 
-	double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
-	double revNtrAAdj = 1.5 - ntrAAdj;
+	//double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
+	//double revNtrAAdj = 1.5 - ntrAAdj;
 
-	double ntrBAdj = rt2(ntr[b] * 2.0 - 1.0) / 4.0 + 0.75;
+	double ntrBAdj = circX(ntr[b] * 2.0 - 1.0) / 4.0 + 0.75;
 	double revNtrBAdj = 1.5 - ntrBAdj;
 
 	double oppQAdj = ntrBAdj / (sqrt(numTeams) * teamsPlayed[a]); //(rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (sqrt(numTeams) * teamsPlayed[a]);
@@ -578,8 +597,8 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	double nonPlayAdj = 1.0; //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
 	double playAdj = 1.0; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
 
-	double nonPlayPenalty = sqrt(ntr[a] >= ntr[b] ? revNtrBAdj - 0.5 : ntrBAdj - 0.5); //THESE ARE STILL BROKEN!
-	double competitionBonus = sqrt(h2hPM[a][b] >= 0 ? ntrBAdj : revNtrBAdj);
+	double nonPlayPenalty = (ntr[a] >= ntr[b] ? revNtrBAdj - 0.25 : ntrBAdj - 0.25); //THESE ARE STILL BROKEN!
+	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj + 0.25 : revNtrBAdj + 0.25);
 
 	if (games[a][b] != 0) {
 		double gameScore = playAdj * (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
@@ -594,6 +613,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	double prediction = rt2(sqPrediction);
 	return prediction;
 }
+
 
 
 double rt2(double x) {
@@ -611,6 +631,64 @@ double powX(double x, double exponent) {
 double pow2(double x) {
 	return powX(x, 2);
 }
+
+double logyX(double x, double base) {
+	if (x > 0) {
+		return (log((base - 1) * x + 1) / log(base));
+	}
+	else if (x < 0) {
+		return (-log((base - 1) * abs(x) + 1) / log(base));
+	}
+	else {
+		return 0;
+	}
+}
+
+double logyT(double x) {
+	return logyX(x, sqrt(numTeams));
+}
+
+double expyX(double x, double base) {
+	if (x > 0) {
+		return (pow(base, x) - 1) / (base - 1);
+	}
+	else if (x < 0) {
+		return -(pow(base, abs(x)) - 1) / (base - 1);
+	}
+	else {
+		return 0;
+	}
+}
+
+double expyT(double x) {
+	return expyX(x, numTeams);
+}
+
+double sinX(double x) {
+	return sin(PI * x / 2);
+}
+
+double asinX(double x) {
+	return 2 * asin(x) / PI;
+}
+
+double circX(double x) {
+	return rtX(sinX(x), 2.0);
+}
+
+double circX(double x, double power) {
+	return rtX(sinX(x), power);
+}
+
+double acircX(double x) {
+	return powX(asinX(x), 2.0);
+}
+
+double acircX(double x, double power) {
+	return powX(asinX(x), power);
+}
+
+
 
 double rootGamesPlus2(double x, double games) {
 	return -1 * (2 * signbit(x) - 1) * pow(abs(x), 1.0 / (2.0 + games));
