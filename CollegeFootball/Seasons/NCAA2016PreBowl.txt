@@ -960,5 +960,4 @@ Temple,(20) Navy
 (14) West Virginia,Baylor
 Western Kentucky,Louisiana Tech
 Army,Navy
-//USC,Rice
 =
