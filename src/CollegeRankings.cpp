@@ -583,25 +583,31 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	if (a == b) {
 		return 0;
 	}
-	double importance = pow2((ntr[a] * ntr[b] + (1.0 - abs(ntr[a] - ntr[b]))) - 1.0) / 2.0 + 0.5; //sqrt(sqrt((1 - (abs(ntr[a] - ntr[b]))) + ntr[b] * ntr[a]) / (1 + ntr[b] * ntr[a]));
-
-	//double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
+	double ntrAAdj = rt2(ntr[a] * 2.0 - 1.0) / 4.0 + 0.75;
 	//double revNtrAAdj = 1.5 - ntrAAdj;
 
-	double ntrBAdj = circX(ntr[b] * 2.0 - 1.0) / 4.0 + 0.75;
+	double ntrBAdj = rt2(ntr[b] * 2.0 - 1.0) / 4.0 + 0.75;
 	double revNtrBAdj = 1.5 - ntrBAdj;
 
-	double oppQAdj = ntrBAdj / (sqrt(numTeams) * teamsPlayed[a]); //(rt2((ntr[b] - 0.5) / 2.0) + 0.5) / (sqrt(numTeams) * teamsPlayed[a]);
-	double negOppQAdj = -1 * ntrBAdj / (sqrt(numTeams) * (numTeams - teamsPlayed[a])); //-1 * sqrt(ntr[b] / 2.0) * teamsPlayed[a] / (sqrt(numTeams) * avgTeamsPlayed);
+	double proximityImp = 1.0 - (abs((ntr[a]) - (ntr[b]))) / 2.0;
+	//double proximityImpAdj = 1.0 - (abs(((ntrAAdj) - (ntrBAdj)))) / 2.0;
+	double rev2multImp = 1.0 - (1.0 - ntr[a]) * (1.0 - ntr[b]);
+	//double rev2multImpAdj = 1.0 - (1.0 - ntrAAdj) * (1.0 - ntrBAdj);
+	//double multImp = ntr[a] * ntr[b];
+	double multImpAdj = ntrAAdj * ntrBAdj;
+	double importance = sqrt(pow2(proximityImp) * (rev2multImp) * (multImpAdj) * ntrBAdj);
 
-	double nonPlayAdj = 1.0; //.7071*1 vs .7071*.7071 || 1*1*.7071 vs. 1*.7071
-	double playAdj = 1.0; //sqrt(1.0 + sqrt(teamsPlayed[a] / numTeams));
+	double oppQAdj = ((h2hPM[a][b] >= 0 ? 2.0 : 0.0) * importance * (ntrBAdj)) / (sqrt(numTeams) * teamsPlayed[a] + 1.0);
+	double negOppQAdj = -(2.0 * importance * (ntrBAdj)) / (sqrt(numTeams) * (numTeams - teamsPlayed[a]) + 1.0);
 
-	double nonPlayPenalty = (ntr[a] >= ntr[b] ? revNtrBAdj - 0.25 : ntrBAdj - 0.25); //THESE ARE STILL BROKEN!
-	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj + 0.25 : revNtrBAdj + 0.25);
+	double nonPlayAdj = 1.0;
+	double playAdj = 1.0;
+
+	double nonPlayPenalty = (ntr[a] >= ntr[b] ? revNtrBAdj - 0.5 : ntrBAdj - 0.5);
+	double competitionBonus = (h2hPM[a][b] >= 0 ? ntrBAdj + 0.0 : revNtrBAdj + 0.0);
 
 	if (games[a][b] != 0) {
-		double gameScore = playAdj * (competitionBonus * importance * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
+		double gameScore = playAdj * (competitionBonus * (importance) * (h2hPM[a][b] * games[a][b]) / (games[a][b] + 1)) + oppQAdj;
 		if (games[a][b] > 1.0) {
 			return rtX(gameScore, (sqrt(games[a][b]) * abs(h2hPM[a][b]) + 1));
 		}
@@ -609,7 +615,7 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 			return rt2(gameScore);
 		}
 	}
-	double sqPrediction = nonPlayAdj * nonPlayPenalty * importance * ((((tempRatings[a]) - (tempRatings[b])) / ((tempAbsRatings[a]) + (tempAbsRatings[b]))) / 2.0) + negOppQAdj;
+	double sqPrediction = nonPlayAdj * nonPlayPenalty * (importance) * ((((tempRatings[a]) - (tempRatings[b])) / ((tempAbsRatings[a]) + (tempAbsRatings[b]))) / 2.0) + negOppQAdj;
 	double prediction = rt2(sqPrediction);
 	return prediction;
 }
