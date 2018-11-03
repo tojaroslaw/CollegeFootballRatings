@@ -13,14 +13,20 @@
 #include <limits>
 using namespace std;
 
-int numTeams;
+int numTeamsTotal;
 int sumTeamsPlayed;
 double avgTeamsPlayed;
 
 const static double PI = 3.14159265358979323846;
 
+void runProgram(stringstream& input, stringstream& inputcopy);
+void runH2HTest(string& inputIn, double startPoint);
+int getNumTeams(string& inputIn);
+
 void getInput3(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
-string>& teams, int& numTeams);
+string>& teams, int& numTeams, stringstream& inputIn);
+int getInput3H2HTest(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
+string>& teams, int& numTeams, string& inputIn, double startPoint, int iterationIn);
 int findTeam(vector<string>& teams, string& team);
 bool teamExists(vector<string>& teams, string& team);
 string toUpper(string& x);
@@ -105,7 +111,25 @@ struct comp {
 } comp;
 
 int main() {
-	ios_base::sync_with_stdio(false);
+	stringstream input;
+	stringstream inputcopy;
+	string inputString = "";
+
+	string x = "$";
+	do {
+		getline(cin, x, '\n');
+		input << x << "\n";
+		inputcopy << x << "\n";
+		inputString += x;
+		inputString += "\n";
+	} while (x.find('=') == string::npos);
+
+	runProgram(input, inputcopy);
+	//runH2HTest(inputString, 8);
+	return 0;
+}
+
+void runProgram(stringstream& input, stringstream& inputcopy) {
 	string temp;
 	cout << setprecision(4) << fixed;
 
@@ -119,21 +143,21 @@ int main() {
 	vector<int> gamesPlayed;
 	vector<int> teamsPlayed;
 
-	getInput3(h2hPM, games, ties, gamesPlayed, teamsPlayed, teams, numTeams);
+	getInput3(h2hPM, games, ties, gamesPlayed, teamsPlayed, teams, numTeamsTotal, input);
 
 	sumTeamsPlayed = sum(teamsPlayed);
 	avgTeamsPlayed = avg(teamsPlayed);
 
-	h2h.resize(numTeams);
-	h2hPredict.resize(numTeams);
-	ratings.resize(numTeams);
-	for (int i = 0; i < numTeams; ++i) {
-		h2h[i].resize(numTeams);
-		h2hPredict[i].resize(numTeams);
+	h2h.resize(numTeamsTotal);
+	h2hPredict.resize(numTeamsTotal);
+	ratings.resize(numTeamsTotal);
+	for (int i = 0; i < numTeamsTotal; ++i) {
+		h2h[i].resize(numTeamsTotal);
+		h2hPredict[i].resize(numTeamsTotal);
 	}
 
-	for (int i = 0; i < numTeams; ++i) {
-		for (int j = 0; j < numTeams; ++j) {
+	for (int i = 0; i < numTeamsTotal; ++i) {
+		for (int j = 0; j < numTeamsTotal; ++j) {
 			if (games[i][j] != 0) {
 				h2hPM[i][j] = h2hPM[i][j] / (games[i][j]);
 				//h2h[i][j] = rt2(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)));
@@ -149,14 +173,191 @@ int main() {
 
 
 	h2hPredict = calcNewRatingGrid5(games, h2h, h2hPM, teamsPlayed);
-	for (int i = 0; i < (int) sqrt(numTeams) + numTeams + 100; ++i) {
+	for (int i = 0; i < (int) sqrt(numTeamsTotal) + numTeamsTotal + 100; ++i) {
 		h2hPredict = calcNewRatingGrid5(games, h2hPredict, h2hPM, teamsPlayed);
 	}
 
 	calcFinalRatings(h2hPredict, ratings);
 	//printGrid2(h2hPredict, teams);
 	printRatingsInfo(teams, ratings, games, h2hPM, ties);
-	return 0;
+}
+
+void runH2HTest(string& inputIn, double startPoint) {
+	string temp;
+	cout << setprecision(4) << fixed;
+
+	vector<string> teams;
+	vector<vector<double> > h2hPM;
+	vector<vector<double> > h2h;
+	vector<vector<double> > h2hPredict;
+	vector<vector<double> > games;
+	vector<vector<int> > ties;
+	vector<double> ratings;
+	vector<int> gamesPlayed;
+	vector<int> teamsPlayed;
+
+	stringstream input(inputIn);
+
+	int iteration = 0;
+	int justNumTeams = getNumTeams(inputIn);
+	int gameline = 0;
+	int correctPreds = 0;
+	int totalPreds = 0;
+
+	gameline = 0;
+	while (gameline >= 0) {
+		gameline = getInput3H2HTest(h2hPM, games, ties, gamesPlayed, teamsPlayed, teams, justNumTeams, inputIn, startPoint, iteration);
+		++iteration;
+		cout << iteration << ", " << gameline << endl;
+
+		sumTeamsPlayed = sum(teamsPlayed);
+		avgTeamsPlayed = avg(teamsPlayed);
+
+		h2h.resize(numTeamsTotal);
+		h2hPredict.resize(numTeamsTotal);
+		ratings.resize(numTeamsTotal);
+		for (int i = 0; i < numTeamsTotal; ++i) {
+			h2h[i].resize(numTeamsTotal);
+			h2hPredict[i].resize(numTeamsTotal);
+		}
+
+		for (int i = 0; i < numTeamsTotal; ++i) {
+			for (int j = 0; j < numTeamsTotal; ++j) {
+				if (games[i][j] != 0) {
+					h2hPM[i][j] = h2hPM[i][j] / (games[i][j]);
+					//h2h[i][j] = rt2(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)));
+					if (games[i][j] > 1.0) {
+						h2h[i][j] = rtX(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)), (sqrt(games[i][j]) * abs(h2hPM[i][j]) + 1));
+					}
+					else {
+						h2h[i][j] = rt2(((h2hPM[i][j] * games[i][j]) / (games[i][j] + 1)));
+					}
+				}
+			}
+		}
+
+		h2hPredict = calcNewRatingGrid5(games, h2h, h2hPM, teamsPlayed);
+		for (int i = 0; i < (int) sqrt(numTeamsTotal) + numTeamsTotal + 100; ++i) {
+			h2hPredict = calcNewRatingGrid5(games, h2hPredict, h2hPM, teamsPlayed);
+		}
+
+		calcFinalRatings(h2hPredict, ratings);
+		if (gameline <= -1) {
+			printRatingsInfo(teams, ratings, games, h2hPM, ties);
+		}
+		else {
+			string x;
+			string match;
+			string winner;
+			string loser;
+			int w;
+			int l;
+			stringstream anotherInput;
+			stringstream matchstream;
+
+			anotherInput << input.str();
+
+			for (int i = 0; i < 1000000; ++i) {
+				getline(anotherInput, x, '\n');
+				if ((x.size() >= 2 && x[0] == '/' && x[1] == '/') || x.size() == 0) {
+					continue;
+				}
+				else if (x.size() >= 1 && x[0] == '_') {
+					i = 99999999;
+					break;
+				}
+			}
+
+			for (int i = 0; i < gameline; ++i) {
+				getline(anotherInput, match, '\n');
+			}
+			getline(anotherInput, match, '\n');
+			match = toUpper(match);
+			matchstream = stringstream(match);
+
+			getline(matchstream, winner, ',');
+			getline(matchstream, loser, '\n');
+			w = findTeam(teams, winner);
+			l = findTeam(teams, loser);
+			if (ratings[w] > ratings[l]) {
+				cout << "*";
+				++correctPreds;
+			}
+			else {
+				cout << "X";
+			}
+			++totalPreds;
+			cout << "\t" << winner << " (" << ratings[w] << ")\tdefeats\t" << loser << " (" << ratings[l] << ")" << endl;
+			cout << correctPreds << " / " << totalPreds << "\t(" << (double) correctPreds / (double) totalPreds * 100.0 << "%)" << endl;
+
+			if (iteration % (numTeamsTotal / 2) == 1) {
+				printRatingsInfo(teams, ratings, games, h2hPM, ties);
+			}
+		}
+	}
+}
+
+int getNumTeams(string& inputIn) {
+	string x;
+	string match;
+	string winner;
+	string loser;
+	int numTeamsInInput = 0;
+	stringstream input(inputIn);
+	stringstream inputcopy(inputIn);
+	stringstream matchstream;
+	vector<string> teams;
+
+	for (int i = 0; i < 1000000; ++i) {
+		getline(input, x, '\n');
+		if ((x.size() >= 2 && x[0] == '/' && x[1] == '/') || x.size() == 0) {
+			continue;
+		}
+		else if (x.size() >= 1 && x[0] == '_') {
+			i = 99999999;
+			break;
+		}
+		++numTeamsInInput;
+	}
+	if (numTeamsInInput == 0) {
+		x = "$";
+		do {
+			getline(inputcopy, x, '\n');
+		} while (x != "_");
+
+		bool wX;
+		bool lX;
+		for (int i = 0; i < 1000000; ++i) {
+			getline(inputcopy, match, '\n');
+			if (match.size() == 0) {
+				continue;
+			}
+			else if (match.size() >= 1 && match[0] == '=') {
+				i = 999999999;
+				continue;
+			}
+			else if (match.size() >= 2 && match[0] == '/' && match[1] == '/') {
+				continue;
+			}
+			match = toUpper(match);
+			matchstream = stringstream(match);
+
+			getline(matchstream, winner, ',');
+			getline(matchstream, loser, '\n');
+			wX = teamExists(teams, winner);
+			lX = teamExists(teams, loser);
+			if (wX == false) {
+				teams.push_back(winner);
+				++numTeamsInInput;
+			}
+			if (lX == false) {
+				teams.push_back(loser);
+				++numTeamsInInput;
+			}
+		}
+	}
+
+	return numTeamsInInput;
 }
 
 int findTeam(vector<string>& teams, string& team) {
@@ -322,24 +523,23 @@ string toUpper(string& x) {
 
 
 void getInput3(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
-string>& teams, int& numTeams) {
+string>& teams, int& numTeams, stringstream& inputIn) {
 	string x;
 	string match;
 	string winner;
 	string loser;
 	int w;
 	int l;
-	stringstream matchstream;
 	stringstream input;
 	stringstream inputcopy;
+	stringstream matchstream;
 
 	x = "$";
 	do {
-		getline(cin, x, '\n');
+		getline(inputIn, x, '\n');
 		input << x << "\n";
 		inputcopy << x << "\n";
-	} while (x != "=");
-
+	} while (x.find('=') == string::npos);
 
 	numTeams = 0;
 	for (int i = 0; i < 1000; ++i) {
@@ -450,6 +650,152 @@ string>& teams, int& numTeams) {
 	}
 }
 
+int getInput3H2HTest(vector<vector<double>>& h2hPM, vector<vector<double>>& games, vector<vector<int>>& ties, vector<int>& gamesPlayed, vector<int>& teamsPlayed, vector<
+string>& teams, int& numTeams, string& inputIn, double startPoint, int iteration) {
+	string x;
+	string match;
+	string winner;
+	string loser;
+	int w;
+	int l;
+	stringstream input(inputIn);
+	stringstream inputcopy(inputIn);
+	stringstream matchstream;
+	bool stopTime = false;
+
+	if (numTeamsTotal <= 0) {
+		numTeamsTotal = 0;
+		for (int i = 0; i < 1000000; ++i) {
+			getline(input, x, '\n');
+			if ((x.size() >= 2 && x[0] == '/' && x[1] == '/') || x.size() == 0) {
+				continue;
+			}
+			else if (x.size() >= 1 && x[0] == '_') {
+				i = 99999999;
+				break;
+			}
+			++numTeamsTotal;
+			x = toUpper(x);
+			teams.push_back(x);
+		}
+
+		if (numTeamsTotal == 0) {
+			x = "$";
+			do {
+				getline(inputcopy, x, '\n');
+			} while (x.find('_') == string::npos);
+
+			bool wX;
+			bool lX;
+			for (int i = 0; i < 1000000; ++i) {
+				getline(inputcopy, match, '\n');
+				if (match.size() == 0) {
+					continue;
+				}
+				else if (match.size() >= 1 && match[0] == '=') {
+					i = 999999999;
+					continue;
+				}
+				else if (match.size() >= 2 && match[0] == '/' && match[1] == '/') {
+					continue;
+				}
+				match = toUpper(match);
+				matchstream = stringstream(match);
+
+				getline(matchstream, winner, ',');
+				getline(matchstream, loser, '\n');
+				wX = teamExists(teams, winner);
+				lX = teamExists(teams, loser);
+				if (wX == false) {
+					teams.push_back(winner);
+					++numTeamsTotal;
+				}
+				if (lX == false) {
+					teams.push_back(loser);
+					++numTeamsTotal;
+				}
+			}
+		}
+
+		h2hPM.resize(numTeamsTotal);
+		games.resize(numTeamsTotal);
+		gamesPlayed.resize(numTeamsTotal);
+		teamsPlayed.resize(numTeamsTotal);
+		ties.resize(numTeamsTotal);
+		for (int i = 0; i < numTeamsTotal; ++i) {
+			h2hPM[i].resize(numTeamsTotal);
+			games[i].resize(numTeamsTotal);
+			ties[i].resize(numTeamsTotal);
+		}
+	}
+	else {
+		x = "$";
+		while (x.find('_') == string::npos) {
+			getline(input, x, '\n');
+		}
+	}
+
+
+
+	int gameline = (int) (startPoint * numTeams / 2.0) + iteration;
+
+	for (int i = 0; i < 1000000; ++i) {
+		int numSkips = (iteration <= 0 ? 0 : gameline - 1);
+
+		getline(input, match, '\n');
+		bool tie = false;
+
+		if (i < numSkips) {
+			continue;
+		}
+		if (match.size() == 0) {
+			continue;
+		}
+		else if (match.size() >= 1 && match[0] == '=') {
+			i = 999999999;
+			stopTime = true;
+			continue;
+		}
+		else if (i >= gameline) {
+			i = 999999999;
+			continue;
+		}
+		else if (match.size() >= 2 && match[0] == '/' && match[1] == '/') {
+			continue;
+		}
+		else if (match[0] == '%') {
+			tie = true;
+		}
+		match = toUpper(match);
+		matchstream = stringstream(match);
+
+		getline(matchstream, winner, ',');
+		getline(matchstream, loser, '\n');
+		w = findTeam(teams, winner);
+		l = findTeam(teams, loser);
+		if (abs(games[w][l]) <= 0.0001) {
+			teamsPlayed[w] += 1;
+			teamsPlayed[l] += 1;
+		}
+		if (tie) {
+			ties[w][l] += 1;
+			ties[l][w] += 1;
+		}
+		else {
+			h2hPM[w][l] += 1;
+			h2hPM[l][w] -= 1;
+		}
+		games[w][l] += 1;
+		games[l][w] += 1;
+		gamesPlayed[w] += 1;
+		gamesPlayed[l] += 1;
+	}
+	if (stopTime) {
+		return -1;
+	}
+	return gameline;
+}
+
 
 void calcFinalRatings(vector<vector<double> >& h2hPredict, vector<double>& ratings) {
 	for (uint64_t i = 0; i < ratings.size(); ++i) {
@@ -533,7 +879,7 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 		sort(teamRatings.begin(), teamRatings.end(), comp);
 		for (uint64_t i = 0; i < teamRatings.size(); ++i) {
 			teamRatings[i].rank = i + 1;
-			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeams - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << endl;
+			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeamsTotal - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << endl;
 		}
 	}
 	else {
@@ -557,7 +903,7 @@ void printRatingsInfo(vector<string>& teams, vector<double>& ratings, vector<vec
 		sort(teamRatings.begin(), teamRatings.end(), comp);
 		for (uint64_t i = 0; i < teamRatings.size(); ++i) {
 			teamRatings[i].rank = i + 1;
-			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeams - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << "," << teamRatings[i].ties << endl;
+			cout << teamRatings[i].rank << "," << teamRatings[i].name << "," << teamRatings[i].rating << "," << teamRatings[i].rawScore << "," << teamRatings[i].rawScore / ((double) (numTeamsTotal - 1)) << "," << teamRatings[i].wins << "," << teamRatings[i].losses << "," << teamRatings[i].ties << endl;
 		}
 	}
 }
@@ -595,10 +941,10 @@ double>& tempAbsRatings, vector<double>& ntr, vector<int>& teamsPlayed, int a, i
 	//double rev2multImpAdj = 1.0 - (1.0 - ntrAAdj) * (1.0 - ntrBAdj);
 	//double multImp = ntr[a] * ntr[b];
 	double multImpAdj = ntrAAdj * ntrBAdj;
-	double importance = sqrt(pow2(proximityImp) * (rev2multImp) * (multImpAdj) * ntrBAdj);
+	double importance = sqrt(pow2(proximityImp) * (rev2multImp) * (multImpAdj) * ntrBAdj + 1.0 / double(numTeamsTotal));
 
-	double oppQAdj = ((h2hPM[a][b] >= 0 ? 2.0 : 0.0) * importance * (ntrBAdj)) / (sqrt(numTeams) * teamsPlayed[a] + 1.0);
-	double negOppQAdj = -(2.0 * importance * (ntrBAdj)) / (sqrt(numTeams) * (numTeams - teamsPlayed[a]) + 1.0);
+	double oppQAdj = ((h2hPM[a][b] >= 0.0 ? 2.0 : 0.0) * importance * (ntrBAdj)) / (sqrt(numTeamsTotal) * teamsPlayed[a] + 1.0);
+	double negOppQAdj = -(2.0 * importance * (ntrBAdj)) / (sqrt(numTeamsTotal) * (numTeamsTotal - teamsPlayed[a]) + 1.0);
 
 	double nonPlayAdj = 1.0;
 	double playAdj = 1.0;
@@ -651,7 +997,7 @@ double logyX(double x, double base) {
 }
 
 double logyT(double x) {
-	return logyX(x, sqrt(numTeams));
+	return logyX(x, sqrt(numTeamsTotal));
 }
 
 double expyX(double x, double base) {
@@ -667,7 +1013,7 @@ double expyX(double x, double base) {
 }
 
 double expyT(double x) {
-	return expyX(x, numTeams);
+	return expyX(x, numTeamsTotal);
 }
 
 double sinX(double x) {
